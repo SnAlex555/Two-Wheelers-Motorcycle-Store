@@ -1,0 +1,110 @@
+.header{
+    height: 87px;
+    background-color: var(--black);
+}
+
+.header__logo{
+    margin-top: 28px;
+    margin-left: 36px;
+}
+
+.header__navigation{
+    display: flex;
+}
+
+.header__navigation-list{
+    display: flex;
+    gap: 70px;
+    margin-left: 370px;
+    margin-top: 31px;
+}
+
+.header__navigation-list-item{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--gold);
+}
+
+.header__navigation-list-item:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__navigation-link--active{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--gold);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header__log-in{
+    margin-top: 22px;
+    margin-left: 40px;
+    width: 144px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    background-color:var(--gold);
+}
+
+.header__log-in:hover{
+    cursor: pointer;
+}
+
+.header__log-in-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.header__commercial{
+    height: 813px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+.header__commercial-title{
+    margin-left: 99px;
+    margin-top: 155px;
+    height: 82px;
+    width: 480px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    color: var(--gold);
+}
+
+.header__commercial-title-subscription{
+    margin-left: 99px;
+    margin-top: 75px;
+    height: 120px;
+    width: 445px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--gold);
+}
+
+.header__commercial-title-link{
+    margin-top: 135px;
+    margin-left: 239px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: var(--gold);
+}
