@@ -4,9 +4,8 @@
 }
 
 .summer-ride__commercial-title{
-    margin-top: 100px;
+    padding-top: 110px; 
     margin-left: 77px;
-    height: 134px;
     width: 689px;
     font-family: 'Inter';
     font-style: normal;
@@ -19,7 +18,6 @@
     margin-top: 50px;
     margin-left: 77px;
     width: 605px;
-    height: 84px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;

@@ -1,0 +1,31 @@
+.why__us{
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+}
+
+.why__us-bike{
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.why__us-title{
+    margin-top: 63px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #D3AF37;
+}
+
+.why__us-subscription{
+    margin-top: 35px;
+    width: 619px;
+    height: 150px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+    color: #D3AF37;
+}

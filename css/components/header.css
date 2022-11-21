@@ -1,5 +1,4 @@
 .header{
-    height: 87px;
     background-color: var(--black);
 }
 
@@ -69,15 +68,13 @@
 
 .header__commercial{
     height: 813px;
-    background-color: var(--black);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .header__commercial-title{
     margin-left: 99px;
     margin-top: 155px;
-    height: 82px;
     width: 480px;
     font-family: 'Inter';
     font-style: normal;
@@ -89,7 +86,6 @@
 .header__commercial-title-subscription{
     margin-left: 99px;
     margin-top: 75px;
-    height: 120px;
     width: 445px;
     font-family: 'Inter';
     font-style: normal;
@@ -107,4 +103,8 @@
     font-size: 24px;
     text-decoration-line: underline;
     color: var(--gold);
+}
+
+.header__commercial-box1{
+    background-color: var(--black);
 }

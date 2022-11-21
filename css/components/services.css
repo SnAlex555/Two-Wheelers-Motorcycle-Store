@@ -1,0 +1,77 @@
+.services{
+    height: 400px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+}
+
+.services__box1{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.services__box2{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.our__showroom{
+    margin-top: 50px;
+    margin-left: 278px;
+    height: 298px;
+    width: 392px;
+    border-radius: 15px;
+}
+
+.test__ride{
+    height: 124px;
+    width: 196px;
+    border-radius: 10px;
+    background-image: url('../images/test-ride.jpg')
+}
+
+.custom__parts{
+    height: 124px;
+    width: 196px;
+    border-radius: 10px;
+    background-image: url('../images/custom-parts.jpg')
+}
+
+.our__service{
+    height: 124px;
+    width: 196px;
+    border-radius: 10px;
+    background-image: url('../images/our-service.jpg')
+}
+
+.finance{
+    height: 124px;
+    width: 196px;
+    border-radius: 10px;
+    background-image: url('../images/finance.jpg')
+}
+
+.our__showroom-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #D3AF37;
+}
+
+.services__description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #D3AF37;
+}
