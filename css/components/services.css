@@ -27,13 +27,29 @@
     height: 298px;
     width: 392px;
     border-radius: 15px;
+    background-image: url('../images/our-showroom.jpg');
 }
 
+.our__showroom:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: fill 0.3s linear;
+    transition: transform 0.3s linear;
+}
+
+      
 .test__ride{
     height: 124px;
     width: 196px;
     border-radius: 10px;
     background-image: url('../images/test-ride.jpg')
+}
+
+.test__ride:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: fill 0.3s linear;
+    transition: transform 0.3s linear;
 }
 
 .custom__parts{
@@ -43,11 +59,25 @@
     background-image: url('../images/custom-parts.jpg')
 }
 
+.custom__parts:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: fill 0.3s linear;
+    transition: transform 0.3s linear;
+}
+
 .our__service{
     height: 124px;
     width: 196px;
     border-radius: 10px;
     background-image: url('../images/our-service.jpg')
+}
+
+.our__service:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: fill 0.3s linear;
+    transition: transform 0.3s linear;
 }
 
 .finance{
@@ -57,6 +87,13 @@
     background-image: url('../images/finance.jpg')
 }
 
+.finance:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: fill 0.3s linear;
+    transition: transform 0.3s linear;
+}
+
 .our__showroom-description{
     font-family: 'Inter';
     font-style: normal;
@@ -64,7 +101,8 @@
     font-size: 36px;
     line-height: 44px;
     text-align: center;
-    color: #D3AF37;
+    color: var(--gold);
+
 }
 
 .services__description{
@@ -73,5 +111,6 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    color: #D3AF37;
+    color: var(--gold);
+
 }

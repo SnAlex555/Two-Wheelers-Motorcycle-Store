@@ -7,5 +7,8 @@
 @import url('./components/summer-ride-commercial.css');
 @import url('./components/why-us.css');
 @import url('./components/services.css');
+@import url('./components/footer.css');
 
-
+@import url('./components/our-showroom/showroom-header.css');
+@import url('./components/our-showroom/showroom-footer.css');
+@import url('./components/our-showroom/our-showroom-filter.css');

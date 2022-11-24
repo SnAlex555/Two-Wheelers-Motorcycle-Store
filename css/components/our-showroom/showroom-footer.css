@@ -1,0 +1,124 @@
+footer{
+    height: 485px;
+    background-color: var(--black);
+}
+
+.footer__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__box1{
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.footer__box2{
+    margin-top: 44px;
+}
+
+.footer__box3{
+    margin-top: 44px;
+}
+
+.footer__box4{
+    margin-right: 70px;
+    margin-top: 50px;
+}
+
+.footer__two-wheelers-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--gold);
+}
+
+.footer__adress{
+    margin-top: 25px;
+    width: 242px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--gold);
+}
+
+.footer__telephone{
+    margin-top: 31px;
+    width: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--gold);
+}
+
+.footer__link{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--gold);
+}
+
+.footer__link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer__store_hours-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--gold);
+}
+
+.footer__working-hours{
+    margin-top: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--gold);
+}
+
+.footer__bottom{
+    margin-top: 118px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__copyrights-description{
+    width: 383px;
+    margin-left: 530px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--gold);
+}
+
+.footer__icons{
+    margin-left: 213px;
+    display: flex;
+    gap:37px;
+}
+
+.footer__icon:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: fill 0.3s linear;
+    transition: transform 0.3s linear;
+}
