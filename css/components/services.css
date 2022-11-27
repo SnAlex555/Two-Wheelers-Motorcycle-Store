@@ -27,7 +27,7 @@
     height: 298px;
     width: 392px;
     border-radius: 15px;
-    background-image: url('../images/our-showroom.jpg');
+    background-image: url('../images/our_showroom.jpg');
 }
 
 .our__showroom:hover{

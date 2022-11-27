@@ -1,4 +1,7 @@
-.page{
-    width: 1440px;
-    margin: 0 auto; 
+:root {
+    --gold:#D3AF37;
+    --black:#252C33;
+    --white:#FFFFFF;
+    --dark-grey:#616161;
+    --light-gold:#F2DE87;
 }
