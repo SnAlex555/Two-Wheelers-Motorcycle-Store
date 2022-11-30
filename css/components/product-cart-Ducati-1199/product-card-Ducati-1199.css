@@ -1,0 +1,87 @@
+.product__info{
+    height: 957px;
+    background-color: var(--white);
+}
+
+.product__info-box1{
+    margin-left: 72px;
+    margin-top: 96px;
+    display: flex;
+}
+
+.product__info-information{
+    width: 497px;
+    height: 536px;
+    margin-left: 172px;
+    background-image: url('../../images/product-card-image/ducatti-logo.png');
+}
+
+.product__info-description{
+    margin-top: 64px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--black);
+}
+
+.product__info-status{
+    margin-top: 33px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.product__info-price{
+    margin-top: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--black);
+}
+
+.product__info-colors{
+    margin-top: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.product__info-stock{
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.product__info-add-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.product__info-add-to-cart{
+    margin-left: 40px;
+    width: 212px;
+    height: 58px;
+    background: var(--gold);
+    border-radius: 15px;
+    border: none;
+}
+
+.product__info-add-to{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--black);
+}

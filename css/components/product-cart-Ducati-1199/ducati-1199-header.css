@@ -1,0 +1,73 @@
+.header{
+    background-color: var(--black);
+}
+
+.header__logo{
+    margin-top: 28px;
+    margin-left: 36px;
+}
+
+.header__navigation{
+    display: flex;
+}
+
+.header__navigation-list{
+    display: flex;
+    gap: 70px;
+    margin-left: 370px;
+    margin-top: 31px;
+}
+
+.header__navigation-list-item{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--gold);
+}
+
+.header__navigation-list-item:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__navigation-link--active{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--gold);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header__log-in{
+    margin-top: 22px;
+    margin-left: 40px;
+    width: 144px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    background-color:var(--gold);
+}
+
+.header__log-in:hover{
+    cursor: pointer;
+}
+
+.header__account{
+    margin-left: 87px;
+    margin-top:13px;
+    width: 63px;
+    height: 62px;
+    border-radius: 55px;
+    border: 1px solid var(--gold);
+    background-image: url('../images/acount.jpg');
+}
+
+.header__account:hover{
+    cursor: pointer;
+}
