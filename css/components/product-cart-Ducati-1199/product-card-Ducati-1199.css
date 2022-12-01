@@ -9,6 +9,11 @@
     display: flex;
 }
 
+.product__info-box2{
+    display: flex;
+
+}
+
 .product__info-information{
     width: 497px;
     height: 536px;
@@ -82,6 +87,100 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.specification__box{
+    margin-top: 100px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.specification__button{
+    height: 50px;
+    width: 243px;
+    border-radius: 15px;
+    border:none;
+    background-color: var(--gold);
+}
+
+.return__button{
+    height: 50px;
+    width: 243px;
+    border-radius: 15px;
+    border-color: var(--gold);
+    background-color: var(--white);
+}
+
+.specification__description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.check__other-title{
+    margin-left: 356px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--black)
+}
+
+.item1__button{
+    height: 166px;
+    width: 148px;
+    border-radius: 15px;
+    border: none;
+    background-image: url('../../images/product-card-image/check-other-Yamaha\ R6.jpg');
+}
+
+.item2__button{
+    height: 166px;
+    width: 148px;
+    border-radius: 15px;
+    border: none;
+    background-image: url('../../images/product-card-image/check-other-Triumph-Street-Triple.jpg');
+}
+
+.item3__button{
+    height: 166px;
+    width: 148px;
+    border-radius: 15px;
+    border: none;
+    background-image: url('../../images/product-card-image/check-other-Kawasaki-Ninja.jpg');
+}
+
+.check__other-items{
+    margin-left: 219px;
+    display: flex;
+}
+
+.check__other-items{
+    margin-top: 5px;
+    gap: 110px;
+}
+
+.item_description{
+    height: 44px;
+    width: 135px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.item_price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
     font-size: 18px;
     color: var(--black);
 }
