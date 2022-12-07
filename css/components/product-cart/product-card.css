@@ -11,7 +11,10 @@
 
 .product__info-box2{
     display: flex;
+}
 
+.product__info-img:hover{
+    cursor: pointer;
 }
 
 .product__info-information{
@@ -83,6 +86,10 @@
     border: none;
 }
 
+.product__info-add-to-cart:hover{
+    cursor: pointer;
+}
+
 .product__info-add-to{
     font-family: 'Inter';
     font-style: normal;
@@ -105,6 +112,14 @@
     border-radius: 15px;
     border:none;
     background-color: var(--gold);
+}
+
+.specification__button:hover{
+    cursor: pointer;
+}
+
+.return__button{
+    cursor: pointer;
 }
 
 .return__button{
@@ -156,13 +171,26 @@
     background-image: url('../../images/product-card-image/check-other-Kawasaki-Ninja.jpg');
 }
 
+.item1__button:hover{
+  cursor: pointer; 
+}
+
+.item2__button:hover{
+    cursor: pointer; 
+}
+
+.item3__button:hover{
+    cursor: pointer; 
+}
+
 .check__other-items{
     margin-left: 219px;
     display: flex;
 }
 
+
 .check__other-items{
-    margin-top: 5px;
+    margin-top: 15px;
     gap: 110px;
 }
 

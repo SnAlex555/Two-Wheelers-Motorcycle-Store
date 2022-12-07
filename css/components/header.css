@@ -1,14 +1,61 @@
 .header{
     background-color: var(--black);
+    max-width: 1440px;
+    width: 100%;
 }
 
 .header__logo{
     margin-top: 28px;
-    margin-left: 36px;
+    margin-left: 36px; 
+}
+
+.header__log-in{
+    margin-right: 60px;
+    width: 144px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    background-color:var(--gold);
 }
 
 .header__navigation{
     display: flex;
+    justify-content: space-between;
+    height:87px;
+}
+
+.header__navigation-list{
+    display: flex;
+    gap: 70px;
+    margin-top: 20px;
+    align-items: baseline;
+}
+
+/* .header{
+    background-color: var(--black);
+    max-width: 1440px;
+    width: 100%;
+}
+
+.header__logo{
+    margin-top: 28px;
+    margin-left: 36px; 
+}
+
+.header__log-in{
+    margin-top: 22px;
+    margin-left: 40px;
+    width: 144px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    background-color:var(--gold);
+}
+.header__navigation{
+    display: flex;
+    height:87px;
 }
 
 .header__navigation-list{
@@ -16,7 +63,7 @@
     gap: 70px;
     margin-left: 370px;
     margin-top: 31px;
-}
+} */
 
 .header__navigation-list-item{
     font-family: 'Inter';
@@ -43,17 +90,6 @@
     text-decoration: underline;
 }
 
-.header__log-in{
-    margin-top: 22px;
-    margin-left: 40px;
-    width: 144px;
-    height: 43px;
-    border-radius: 10px;
-    border: none;
-    align-items: center;
-    background-color:var(--gold);
-}
-
 .header__log-in:hover{
     cursor: pointer;
 }
@@ -72,8 +108,6 @@
     cursor: pointer;
 }
 
-
-
 .header__log-in-text{
     font-family: 'Inter';
     font-style: normal;
@@ -86,10 +120,25 @@
     height: 813px;
     display: flex;
     flex-direction: row;
+
+}
+
+.header__commercial-box1{
+    width: 548px;
+    height: 813px;
+    background-color: var(--black);
+}
+
+.header__commercial-box2{
+    width: 894px;
+    height: 813px;
+    background-image: linear-gradient(89.83deg, #252C33 10.53%, rgba(37, 44, 51, 0) 49.48%), url('../images/header-bike.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .header__commercial-title{
-    margin-left: 99px;
+    margin-left: 80px;
     margin-top: 155px;
     width: 480px;
     font-family: 'Inter';
@@ -100,7 +149,7 @@
 }
 
 .header__commercial-title-subscription{
-    margin-left: 99px;
+    margin-left: 80px;
     margin-top: 75px;
     width: 445px;
     font-family: 'Inter';
@@ -110,9 +159,9 @@
     color: var(--gold);
 }
 
-.header__commercial-title-link{
+.header__commercial-title-description{
     margin-top: 135px;
-    margin-left: 239px;
+    margin-left: 215px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -121,6 +170,4 @@
     color: var(--gold);
 }
 
-.header__commercial-box1{
-    background-color: var(--black);
-}
+@media screen and (max-width:px ){

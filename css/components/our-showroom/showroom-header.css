@@ -15,7 +15,7 @@
 .header__navigation-list{
     display: flex;
     gap: 70px;
-    margin-left: 370px;
+    /* margin-left: 370px; */
     margin-top: 31px;
 }
 

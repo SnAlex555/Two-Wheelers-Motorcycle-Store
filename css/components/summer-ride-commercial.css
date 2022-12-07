@@ -1,6 +1,8 @@
 .summer-ride__commercial{
+    max-width: 1440px;
+    width: 100%;
     height: 548px;
-    background-image: url('../images/summer-commercial-background.jpg');
+    background-image: linear-gradient(90deg, rgba(205, 250, 253, 0.75) 0%, rgba(253, 253, 217, 0) 100%), url('../images/summer-commercial-background.jpg');
 }
 
 .summer-ride__commercial-title{
