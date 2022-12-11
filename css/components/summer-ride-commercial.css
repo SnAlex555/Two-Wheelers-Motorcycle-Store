@@ -2,12 +2,22 @@
     max-width: 1440px;
     width: 100%;
     height: 548px;
+    display: flex;
     background-image: linear-gradient(90deg, rgba(205, 250, 253, 0.75) 0%, rgba(253, 253, 217, 0) 100%), url('../images/summer-commercial-background.jpg');
+}
+
+.summer-ride__wrapper{
+    width: 1363px;
+    padding-left: 77px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 0.4 0 auto;
 }
 
 .summer-ride__commercial-title{
     padding-top: 110px; 
-    margin-left: 77px;
+    /* margin-left: 77px; */
     width: 689px;
     font-family: 'Inter';
     font-style: normal;
@@ -18,7 +28,7 @@
 
 .summer-ride__commercial-title-subscription{
     margin-top: 50px;
-    margin-left: 77px;
+    /* margin-left: 77px; */
     width: 605px;
     font-family: 'Inter';
     font-style: normal;
@@ -29,7 +39,7 @@
 
 .summer-ride__commercial-title-link{
     margin-top: 50px;
-    margin-left: 77px;
+    /* margin-left: 77px; */
     width: 318px;
     height: 30px;
     font-family: 'Inter';

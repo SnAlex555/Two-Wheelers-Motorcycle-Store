@@ -5,11 +5,20 @@
     background-color: var(--white);
     display: flex;
     flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.services__wrapper{
+    width: 884px;
+    display: flex;
+    flex: 0.1 0 auto;
+    justify-content: space-between;
 }
 
 .services__box1{
     margin-top: 50px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -17,7 +26,7 @@
 
 .services__box2{
     margin-top: 50px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -25,7 +34,7 @@
 
 .our__showroom{
     margin-top: 50px;
-    margin-left: 278px;
+    /* margin-left: 278px; */
     height: 298px;
     width: 392px;
     border-radius: 15px;
@@ -38,7 +47,6 @@
     transition: fill 0.3s linear;
     transition: transform 0.3s linear;
 }
-
       
 .test__ride{
     height: 124px;

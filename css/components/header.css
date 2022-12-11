@@ -1,16 +1,24 @@
+
 .header{
     background-color: var(--black);
     max-width: 1440px;
     width: 100%;
 }
 
+.header__navigation-inner {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.5 0 auto;
+}
+
 .header__logo{
     margin-top: 28px;
-    margin-left: 36px; 
+    /* margin-left: 36px;  */
 }
 
 .header__log-in{
-    margin-right: 60px;
+    margin-top: 10px;
+    margin-right: 24px;
     width: 144px;
     height: 43px;
     border-radius: 10px;
@@ -20,51 +28,141 @@
 }
 
 .header__navigation{
+    width: 100%;
+    max-width: 1345px;
+    margin:  0 auto;
     display: flex;
     justify-content: space-between;
-    height:87px;
-}
-
-.header__navigation-list{
-    display: flex;
-    gap: 70px;
-    margin-top: 20px;
+    height: 87px;
     align-items: baseline;
 }
 
-/* .header{
-    background-color: var(--black);
-    max-width: 1440px;
-    width: 100%;
-}
-
-.header__logo{
-    margin-top: 28px;
-    margin-left: 36px; 
-}
-
-.header__log-in{
-    margin-top: 22px;
-    margin-left: 40px;
-    width: 144px;
-    height: 43px;
-    border-radius: 10px;
-    border: none;
-    align-items: center;
-    background-color:var(--gold);
-}
-.header__navigation{
-    display: flex;
-    height:87px;
-}
-
 .header__navigation-list{
     display: flex;
-    gap: 70px;
-    margin-left: 370px;
-    margin-top: 31px;
-} */
+    /* gap: 70px; */
+    margin-top: 20px;
+    align-items: baseline;
+    flex: 0.70 0 auto;
+    justify-content: space-between;
+}
 
+.header__navigation-sub-menu{
+    display: none;
+    position: relative;
+    background-color: var(--gold);
+}
+
+.header__navigation-sub-menu li{
+    height: 45px;
+    width: 146px;
+    border-bottom: 1px solid var(--dark-gold);
+}
+
+.header__navigation-list-item:hover .header__navigation-sub-menu{
+    display: block;
+}
+
+.header__navigation-sub-menu li:hover{
+    background-color: var(--dark-gold);
+}
+
+.header__navigation-sub-menu-link{
+    text-decoration: none;
+}
+
+.header__navigation-sub-menu-link-description{
+    margin-left: 15px;
+    padding-top: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.header__navigation-sub-menu-link:hover{
+    color: var(--dark-gold)
+}
+
+.header__burger{
+    margin: 48px 0 0 50px;
+    display: none;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.overlay--active {
+    display: block;
+}
+
+.header__nav-mobile{
+    display: none;
+}
+
+.header__mobile-wrapper{
+    display: none;
+}
+
+.nav__link--header-mobile-sub-menu{
+    display: none;
+}
+
+.header__nav-mobile--active {
+    display: block;
+    transform: translateX(-226px)
+}
+
+
+.header__nav-mobile li:hover{
+    background-color: var(--dark-gold);
+}
+
+
+.nav__link--header-mobile {
+     color: var(--black);
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 50px;
+    transition: color 0.5s;
+    border-bottom: 1px solid var(--dark-gold);
+}
+    
+.nav__link--header-mobile-sub-menu:hover .nav__link--header-mobile-sub-menu-item{
+    display: block;
+}
+    
+.nav__link--header-mobile-sub-menu li:hover{
+    background-color: var(--dark-gold);
+}
+    
+.nav__link--header-mobile-sub-menu-link{
+    text-decoration: none;
+ }
+    
+.nav__link--header-mobile-sub-menu-link-description{
+    margin-left: 15px;
+    padding-top: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+}
+    
+.header__navigation-sub-menu-link:hover{
+    color: var(--dark-gold)
+}   
+ 
 .header__navigation-list-item{
     font-family: 'Inter';
     font-style: normal;
@@ -120,7 +218,6 @@
     height: 813px;
     display: flex;
     flex-direction: row;
-
 }
 
 .header__commercial-box1{
@@ -170,4 +267,133 @@
     color: var(--gold);
 }
 
-@media screen and (max-width:px ){
+@media screen and (max-width:1200px ){
+    .header__commercial-box1{
+        width: 1440px;
+        text-align: center;
+    }
+
+    .header__commercial-box2{
+       display: none;
+    }
+
+    .header__commercial-title{
+        margin-left: 250px;
+        width: 560px;
+    }
+    
+    .header__commercial-title-subscription{
+        margin-left: 160px;
+        width: 715px;
+    }
+}
+
+@media screen and (max-width:940px ){
+    .header__commercial{
+        height: 670px;
+    }
+
+    .header__commercial-title{
+        margin-top: 120px;
+        margin-left: 200px;
+    }
+    
+    .header__commercial-title-subscription{
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width:912px ){
+
+.header__navigation{
+    justify-content: flex-start;
+}   
+
+.header__navigation-list{
+    display: none;
+}
+
+.header__log-in{
+    display: none;
+}
+
+.header__log-in--mobile{
+    display: block;
+}
+
+.header__logo{
+    display: none;
+}
+
+.header__logo--mobile{
+    display: block;
+}
+
+.header__burger{
+    margin: 48px 0 0 50px;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 7px 0;
+    }
+
+.header__nav-mobile {
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: var(--gold);
+    width: 250px;
+    text-align: center;
+    z-index: 101;
+    transition: transform 0.8s;
+}
+
+.header__log-in--mobile{
+    width: 144px;
+    height: 43px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    background-color:var(--gold);
+}
+
+.header__log-in--mobile:hover{
+    cursor: pointer;
+}
+
+.header__log-in-text--mobile{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.header__mobile-wrapper{
+    display: flex;
+    align-items: center;
+    flex: 0.3 0 auto;
+    justify-content: space-between;
+}
+
+.header__commercial-title{
+    margin-left: 150px;
+}
+
+.header__commercial-title-subscription{
+    margin-left: 80px;
+}
+} 
+
+@media screen and (max-width:870px ){
+    .header__commercial-title{
+        margin-left: 120px;
+    }
+    
+    .header__commercial-title-subscription{
+        margin-left: 60px;
+    }
+}
