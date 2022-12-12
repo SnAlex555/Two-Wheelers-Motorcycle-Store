@@ -1,8 +1,18 @@
 .footer{
     max-width: 1440px;
     width: 100%;
-    /* height: 485px; */
     background-color: var(--black);
+    display: flex;
+}
+
+.footer__wrapper{
+    width: 1345px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__wrapper-wrapper{
+    display: none;
 }
 
 .footer__top{
@@ -101,18 +111,27 @@
     margin-top: 118px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-bottom: 40px;
-    display: flex;
     justify-content: end;
 }
-
 
 .footer__bottom-wrapper {
   display: flex;
   justify-content: space-between;
   flex: 0.5 0 auto;
   align-items: center;
+}
+
+.footer__wrapper-container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__wrapper-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer__copyrights-description{
@@ -138,3 +157,181 @@
     transition: fill 0.3s linear;
     transition: transform 0.3s linear;
 }
+
+@media screen and (max-width: 1340px){
+    .footer__bottom{
+        width: 1250px;
+    }
+}
+    
+@media screen and (max-width: 1280px){
+    .footer__bottom{
+        width:1120px;
+    }
+}
+
+@media screen and (max-width: 1180px){
+
+    .footer__bottom{
+        width: 1015px;
+    }
+
+    .footer__two-wheelers-title{
+        font-size:20px
+    }
+
+    .footer__adress {
+        font-size:18px
+    }
+
+
+    .footer__telephone {
+        font-size:18px
+    }
+
+    .footer__link{
+        font-size:18px
+    }
+
+    .footer__working-hours{
+        font-size:20px
+    }
+
+    .footer__copyrights-description{
+        font-size:16px
+    }
+}
+
+@media screen and (max-width: 1040px){
+
+    .footer__top{
+        justify-content: flex-start;
+    }
+
+    .footer__box1{
+        margin-left: 30px;
+    }
+
+    .footer__box2{
+        margin-left: 30px;
+    }
+
+    .footer__box3{
+        margin-left: 30px;
+    }
+
+    .footer__box4{
+        margin-left: 30px;
+    }
+
+    .footer__bottom{
+        margin-left: 30px;
+        justify-content: flex-start;
+    }
+
+}
+
+@media screen and (max-width:900px ){
+    .footer__wrapper{
+        display: none;
+    }
+
+    .footer__wrapper-wrapper{
+        display: block;
+    }
+}
+
+    .footer__wrapper-container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    
+    .footer__wrapper-container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-left: 120px;
+    }
+
+    .footer__bottom-wrapper{
+        justify-content: flex-start;
+    }
+
+    @media screen and (max-width:680px ){
+
+        .footer__wrapper-container2{
+            padding-left: 60px;
+        }
+
+        .footer__bottom-wrapper{
+            display: block;
+            margin-left: 100px;
+        }
+    }
+
+    @media screen and (max-width:680px ){
+        .footer__top {
+            flex-direction: column;
+    }
+
+    .footer__bottom{
+        margin-top: 30px;
+    }
+
+    .footer__bottom-wrapper{
+        margin-left: 50px;
+    }
+
+    .footer__wrapper-container1 {
+       margin-left: 90px;     
+    }
+
+    .footer__wrapper-container2 {
+        margin-left: 150px;   
+    }
+
+    .footer__box2-wrapper-wrapper{
+        margin-top: 25px;
+    }
+                                                           
+}
+
+@media screen and (max-width:460px ){
+    .footer__wrapper-container1{
+        margin-left: 1px;
+    }
+
+    .footer__wrapper-container2{
+        margin-left: 1px;
+        padding-left: 30px;;
+    }
+
+    .footer__working-hours{
+        font-size: 16px;
+    }
+
+    .footer__telephone{
+        font-size: 16px;
+    }
+
+    .footer__adress{
+        font-size: 16px;
+    }
+
+    .footer__store_hours-title {
+        font-size: 20px;
+    }
+
+    .footer__bottom-wrapper{
+        margin-left: 1px;
+    }
+    
+    .footer__icons{
+        gap: 30px;
+    }
+}
+

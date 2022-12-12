@@ -40,6 +40,116 @@
     color: #D3AF37;
 }
 
-@media screen and (max-width:px ) {
+@media screen and (max-width:1280px ) {
+    .why__us-subscription{
+       margin-top: 30px; 
+       width: 580px;
+}
 
+    .why__us-bike{
+        height:420px;
+        width:550px;
+    }
+}
+@media screen and (max-width:1200px ) {
+    .why__us-subscription{
+        margin-top: 33px;
+        width: 550px;
+        font-size:18px;
+    }
+
+    .why__us-bike{
+        height:420px;
+        width:550px;
+        margin-top:57px;
+    }
+
+    .why__us-title{
+        font-size:32px;
+    }
+}
+
+@media screen and (max-width:1175px ) {
+
+    .why__us-bike {
+        height: 380px;
+        width: 510px;
+        margin-top: 65px
+}
+
+    .why__us-title{
+        font-size:30px;
+    }
+
+    .why__us-subscription{
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:1100px ) {
+    .why__us-bike {
+        height: 360px;
+        width: 480px;
+        margin-top: 75px;
+    }
+
+    .why__us-subscription{
+        width: 422px;
+    }
+}
+
+@media screen and (max-width:970px ) {
+    .why__us-bike {
+        height: 340px;
+        width: 430px;
+        margin-top: 79px;
+}
+    .why__us-bike{
+        display: none;
+    }
+
+    .why__us-subscription {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width:780px ) {
+    .why__us-subscription {
+        width: 604px;
+    }
+}
+
+@media screen and (max-width:640px ) {
+    .why__us-subscription {
+        width: 503px;
+    }
+}
+
+@media screen and (max-width:540px ) {
+
+    .why__us-title{
+        font-size:26px;
+    }
+    .why__us-subscription {
+        width: 435px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:480px ) {
+    .why__us-subscription{
+        width: 330px;
+        margin-top: 26px;
+        line-height: 25px;
+        height: 160px;
+} 
+}
+
+@media screen and (max-width:380px ) {
+    .why__us-subscription {
+        width: 289px;
+        margin-top: 26px;
+        line-height: 20px;
+        height: 170px;
+}
 }
