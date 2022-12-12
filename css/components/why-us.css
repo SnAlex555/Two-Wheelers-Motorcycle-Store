@@ -7,6 +7,13 @@
     justify-content: space-around;
 }
 
+.why__us-wrapper{
+    max-width: 1293px;
+    display: flex;
+    justify-content: space-between;
+    flex: 0.4 0 auto;
+}
+
 .why__us-bike{
     margin-top: 50px;
     border-radius: 20px;
@@ -31,4 +38,8 @@
     line-height: 30px;
     font-size: 20px;
     color: #D3AF37;
+}
+
+@media screen and (max-width:px ) {
+
 }

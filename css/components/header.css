@@ -286,6 +286,10 @@
         margin-left: 160px;
         width: 715px;
     }
+
+    .header__commercial-title-description{
+        margin-left: 1px;
+    }
 }
 
 @media screen and (max-width:940px ){
@@ -300,6 +304,10 @@
     
     .header__commercial-title-subscription{
         margin-left: 120px;
+    }
+
+    .header__commercial-title-description{
+        margin-left: 0px;
     }
 }
 
@@ -391,9 +399,130 @@
 @media screen and (max-width:870px ){
     .header__commercial-title{
         margin-left: 120px;
+        font-size: 20px;
     }
     
     .header__commercial-title-subscription{
         margin-left: 60px;
+        font-size: 18px;
+    }
+
+    .header__commercial-title-description{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:870px ){
+    .header__commercial-title{
+    margin-left: 50px;
+}
+
+.header__commercial-title-subscription{
+    margin-left: 20px;
+}
+}
+
+@media screen and (max-width:768px ){
+    .header__commercial{
+    height: 580px;
+}
+
+.header__commercial-title{
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.header__commercial-title-subscription{
+    margin-left: 40px;
+    width:560px;
+    font-size: 16px;
+}
+
+.header__commercial-title-description{
+    font-size: 18px;
+}
+}
+
+@media screen and (max-width:640px ){
+    .header__commercial-title{
+        margin-left: 15px;
+    }
+
+    .header__commercial-box1 {
+        max-width: 450px;
+        width: 100%;
+    }
+    .header__commercial-title-subscription{
+        margin-left: 20px;
+        width:520px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:570px ) {
+    .header__commercial {
+        height: 500px;
+    }
+
+    .header__commercial-box1 {
+        max-width: 400px;
+        width: 100%;
+    }
+    .header__commercial-title{
+        width: 515px;
+        margin-top: 60px;
+        margin-left: 1px;
+    }
+
+    .header__commercial-title-subscription{
+        margin-left: 20px;
+        width: 450px;
+    }
+
+    .header__commercial-title-description{
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+ }
+
+ @media screen and (max-width:495px ) {
+
+    .header__log-in--mobile{
+        width: 130px;
+        height: 35px;
+    }
+    
+    .header__commercial-title {
+        width: 400px;
+        font-size: 16px;
+    }
+
+    .header__commercial-title-subscription {
+        width: 380px;
+        font-size: 14px;
+    }
+ }
+
+@media screen and (max-width:420px ) {
+    .header__mobile-wrapper{
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .header__log-in--mobile{
+        width: 120px;
+        height: 30px;
+    }
+    .header__commercial-title {
+        width: 310px;
+    }
+
+    .header__commercial-title-subscription {
+        width: 260px;
+    } 
+
+    .header__commercial-title-description{
+        margin-left: 1px;
+        margin-top: 100px;
     }
 }
