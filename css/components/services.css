@@ -39,7 +39,7 @@
     height: 298px;
     width: 392px;
     border-radius: 15px;
-    background-image: url('../images/our_showroom.jpg');
+    background-image: url('/images/services/our_showroom.jpg');
 }
 
 .our__showroom:hover{
@@ -53,7 +53,7 @@
     height: 124px;
     width: 196px;
     border-radius: 10px;
-    background-image: url('../images/test-ride.jpg')
+    background-image: url('/images/services/test-ride.jpg')
 }
 
 .test__ride:hover{
@@ -67,7 +67,7 @@
     height: 124px;
     width: 196px;
     border-radius: 10px;
-    background-image: url('../images/custom-parts.jpg')
+    background-image: url('/images/services/custom-parts.jpg')
 }
 
 .custom__parts:hover{
@@ -81,7 +81,7 @@
     height: 124px;
     width: 196px;
     border-radius: 10px;
-    background-image: url('../images/our-service.jpg')
+    background-image: url('/images/services/our_showroom.jpg')
 }
 
 .our__service:hover{
@@ -95,7 +95,7 @@
     height: 124px;
     width: 196px;
     border-radius: 10px;
-    background-image: url('../images/finance.jpg')
+    background-image: url('/images/services/finance.jpg')
 }
 
 .finance:hover{
