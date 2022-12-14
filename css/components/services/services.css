@@ -81,7 +81,7 @@
     height: 124px;
     width: 196px;
     border-radius: 10px;
-    background-image: url('/images/services/our_showroom.jpg')
+    background-image: url('/images/services/our-service.jpg')
 }
 
 .our__service:hover{

@@ -2,14 +2,12 @@
 @import url('./global.css');
 @import url('/css/reset.css');
 @import url('./common.css');
-
-@import url('./components/header.css');
-@import url('./components/summer-ride-commercial.css');
-@import url('./components/why-us.css');
-@import url('./components/services.css');
-@import url('./components/footer.css');
-
-/* @import url('./components/our-showroom/showroom-header.css'); */
-@import url('./components/our-showroom/showroom-footer.css');
+@import url('../libs/normalise.css');
+@import url('/css/components/header/header.css');
+@import url('./components/summer-ride-commercial/summer-ride-commercial.css');
+@import url('./components/why-us/why-us.css');
+@import url('./components/services/services.css');
+@import url('./components/footer/footer.css');
 @import url('./components/our-showroom/our-showroom-filter.css');
-@import url('./components/product-cart/product-card.css');
+@import url('./components/search-results/search-results.css');
+@import url('./components/product-card/product-card.css');

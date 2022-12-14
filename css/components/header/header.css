@@ -229,7 +229,7 @@
 .header__commercial-box2{
     width: 894px;
     height: 813px;
-    background-image: linear-gradient(89.83deg, #252C33 10.53%, rgba(37, 44, 51, 0) 49.48%), url('../../images/header-commercial/header-bike.jpg');
+    background-image: linear-gradient(89.83deg, #252C33 10.53%, rgba(37, 44, 51, 0) 49.48%), url('/images/header-commercial/header-bike.jpg');
     background-repeat: no-repeat;
     background-position: right;
 }
