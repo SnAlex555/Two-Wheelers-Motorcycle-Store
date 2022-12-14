@@ -112,8 +112,9 @@
 
 .header__nav-mobile--active {
     display: block;
-    transform: translateX(-226px)
+    transform: translateX(0);
 }
+
 
 
 .header__nav-mobile li:hover{
@@ -353,6 +354,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
+    transform: translateX(-249px);
     background: var(--gold);
     width: 250px;
     text-align: center;

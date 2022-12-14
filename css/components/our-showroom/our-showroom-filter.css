@@ -490,6 +490,10 @@
 
 }
 
+.intersectional__box-select-container {
+    margin-top: 5px;
+}
+
 .search__buttons-adapt{
     margin-left: 40px;
 }

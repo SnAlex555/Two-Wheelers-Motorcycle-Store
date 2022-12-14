@@ -4,13 +4,15 @@
 }
 
 .product__info-box1{
-    margin-left: 72px;
+    margin-left: 60px;
     margin-top: 96px;
     display: flex;
+    justify-content: space-between;
 }
 
-.product__info-box2{
+.product__info-box2 {
     display: flex;
+    justify-content: space-between;
 }
 
 .product__info-img:hover{
@@ -20,8 +22,8 @@
 .product__info-information{
     width: 497px;
     height: 536px;
-    margin-left: 172px;
-    background-image: url('../../images/product-card-image/ducatti-logo.png');
+    margin-right: 205px;
+    background-image: url('/images/product-card-image/ducatti-logo.png');
 }
 
 .product__info-description{
@@ -139,7 +141,6 @@
 }
 
 .check__other-title{
-    margin-left: 356px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -152,7 +153,7 @@
     width: 148px;
     border-radius: 15px;
     border: none;
-    background-image: url('../../images/product-card-image/check-other-Yamaha\ R6.jpg');
+    background-image: url('../../../images/product-card-image/check-other-Yamaha\ R6.jpg');
 }
 
 .item2__button{
@@ -160,7 +161,7 @@
     width: 148px;
     border-radius: 15px;
     border: none;
-    background-image: url('../../images/product-card-image/check-other-Triumph-Street-Triple.jpg');
+    background-image: url('../../../images/product-card-image/check-other-Triumph-Street-Triple.jpg');
 }
 
 .item3__button{
@@ -168,7 +169,7 @@
     width: 148px;
     border-radius: 15px;
     border: none;
-    background-image: url('../../images/product-card-image/check-other-Kawasaki-Ninja.jpg');
+    background-image: url('../../../images/product-card-image/check-other-Kawasaki-Ninja.jpg');
 }
 
 .item1__button:hover{
@@ -184,13 +185,10 @@
 }
 
 .check__other-items{
-    margin-left: 219px;
     display: flex;
-}
-
-
-.check__other-items{
+    justify-content: space-between;
     margin-top: 15px;
+    margin-right: 130px;
     gap: 110px;
 }
 
@@ -211,4 +209,261 @@
     font-weight: 600;
     font-size: 18px;
     color: var(--black);
+}
+
+@media screen and (max-width:1280px){
+
+    .product__info-information{
+         width: 420px;
+        height: 453px;
+        background-image: url('/images/product-card-image/ducatti-logo1.png');
+    }
+
+    .check__other-items{
+        gap: 65px;
+    }
+
+    .product__info-description{
+        font-size: 26px;
+    }
+                     
+    .product__info-status{
+        font-size: 22px;
+    }
+                    
+    .product__info-price{
+        font-size: 28px;
+    }
+                     
+    .product__info-color{
+        font-size: 22px;
+    }
+                        
+    .product__info-stock{
+        font-size: 22px;
+    }
+        
+    .check__other-title{
+        font-size: 30px;
+    }
+
+    .item_description{
+        font-size: 16px;
+    }
+    
+    .item_price{
+        font-size: 16px;
+    }
+}
+    
+@media screen and (max-width:1200px){
+    .product__info-information{
+       background:none;
+   }
+
+   .product__info-box1 {
+    margin-left: 30px;
+}
+    .specification__box{
+    margin-left: 75px;
+    }
+
+    .check__other-items{
+    gap: 45px;
+    }
+}
+
+@media screen and (max-width:1020px){
+
+    .product__info-box1 {
+        margin-left: 230px;
+    }
+
+    .product__info {
+     height: 1510px;
+    }
+
+    .specification__box {
+        margin-left: 55px;
+    }
+
+    .product__info-box1 {
+        display: block;
+    }   
+
+    .specification__button {
+        width:190px
+    }
+    
+        .return__button {
+            width:190px
+        }
+    
+        .check__other-items{
+            gap: 20px;
+        }
+    
+        .specification__description{
+            font-size: 18px;
+        }
+    
+        .check__other-title {
+            font-size: 28px;
+    }
+
+    .product__info-add-to-cart{
+        width: 190px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .product__info-box1 {
+        margin-top: 60px;
+        margin-left: 180px;
+        height: 1015px;
+    } 
+
+    .product__info-box2 {
+        align-items: stretch;
+        flex-direction: column;
+    }   
+
+    .specification__box {
+        margin-top: 0px;
+        margin-left: 260px;
+    
+    }
+
+    .product__info {
+        height: 1698px;
+    }
+    
+    .check__other-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }  
+
+    .check__other-title {
+        margin-top: 20px;
+}
+
+}
+
+
+
+@media screen and (max-width:812px){
+   
+    .product__info-box1 {
+        margin-left: 100px;
+        margin-top: 40px;
+        height: 940px;
+}
+
+    .product__info-description{
+        font-size: 20px;
+        margin-top: 24px;
+    }
+                    
+    .product__info-status{
+        font-size: 18px;
+        margin-top: 24px;
+    }
+                    
+    .product__info-price{
+        margin-top: 24px;
+        font-size: 20px;
+    }
+                    
+    .product__info-color{
+        margin-top: 24px;
+        font-size: 18px;
+    }
+                        
+    .product__info-stock{
+        margin-top: 24px;
+        font-size:18px;
+    }
+        
+    .check__other-title{
+        font-size: 24px;
+    }
+
+    .specification__box {
+        margin-top: 0px;
+        margin-left: 180px;
+    }
+
+    .check__other-items {
+        flex-direction: column;
+    }
+    
+    .product__info {
+        height: 1900px;
+    }
+
+    .check__other-box{
+        display: block;
+        margin-left: 100px;
+    }
+    
+}
+
+@media screen and (max-width:640px){
+
+    .product__info-img{
+        width: 300px; 
+        height: 336px;
+    }
+
+    .product__info-box1 {
+        margin-left: 40px;;
+        margin-top: 40px;
+        height: 719px;
+}
+
+    .specification__box {
+        margin-top: 0px;
+        margin-left: 48px;
+    }
+
+    .product__info-description {
+        font-size: 18px;
+    }
+
+    .product__info-price {
+        font-size: 18px;
+    }
+
+    .product__info-add-buttons {
+        margin-left: -31px;
+    }
+
+    .product__info {
+        height: 1725px;
+    }
+
+    .product__info-information {
+        width: 280px;
+}
+}
+
+@media screen and (max-width:360px){
+
+    .product__info-box1 {
+        margin-left: 10px;
+    }
+
+    .product__info-add-buttons {
+        margin-left: 0px;
+    }
+
+    .specification__box {
+        margin-top: 0px;
+        margin-left: 45px;
+    }
+    
+    .check__other-box {
+        margin-left: 70px;
+    }
 }
