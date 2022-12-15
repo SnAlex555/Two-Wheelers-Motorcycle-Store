@@ -1,0 +1,209 @@
+.main__top-commercial{
+    height: 813px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main__top-commercial-box1{
+    width: 548px;
+    height: 813px;
+    background-color: var(--black);
+}
+
+.main__top-commercial-box2{
+    width: 894px;
+    height: 813px;
+    background-image: linear-gradient(89.83deg, #252C33 10.53%, rgba(37, 44, 51, 0) 49.48%), url('/images/header-commercial/header-bike.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main__top-commercial-title{
+    margin-left: 80px;
+    margin-top: 155px;
+    width: 480px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    color: var(--gold);
+}
+
+.main__top-commercial-title-subscription{
+    margin-left: 80px;
+    margin-top: 75px;
+    width: 445px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--gold);
+}
+
+.main__top-commercial-title-description{
+    margin-top: 135px;
+    margin-left: 215px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: var(--gold);
+}
+
+@media screen and (max-width:1200px ){
+    .main__top-commercial-box1{
+        width: 1440px;
+        text-align: center;
+    }
+
+    .main__top-commercial-box2{
+       display: none;
+    }
+
+    .main__top-commercial-title{
+        margin-left: 250px;
+        width: 560px;
+    }
+    
+    .main__top-commercial-title-subscription{
+        margin-left: 160px;
+        width: 715px;
+    }
+
+    .main__top-commercial-title-description{
+        margin-left: 1px;
+    }
+}
+
+@media screen and (max-width:940px ){
+    .main__top-commercial{
+        height: 670px;
+    }
+
+    .main__top-commercial-title{
+        margin-top: 120px;
+        margin-left: 200px;
+    }
+    
+    .main__top-commercial-title-subscription{
+        margin-left: 120px;
+    }
+
+    .main__top-commercial-title-description{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:912px ){
+    .main__top-commercial-title{
+        margin-left: 150px;
+    }
+    
+    .main__top-commercial-title-subscription{
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width:870px ){
+
+    .main__top-commercial-title{
+    margin-left: 50px;
+}
+
+.main__top-commercial-title-subscription{
+    margin-left: 20px;
+}
+}
+
+@media screen and (max-width:768px ){
+    .main__top-commercial{
+    height: 580px;
+}
+
+.main__top-commercial-title{
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.main__top-commercial-title-subscription{
+    margin-left: 40px;
+    width:560px;
+    font-size: 16px;
+}
+
+.main__top-commercial-title-description{
+    font-size: 18px;
+}
+}
+
+@media screen and (max-width:640px ){
+    .main__top-commercial-title{
+        margin-left: 15px;
+        width: 515px;
+    }
+
+    .main__top-commercial-box1 {
+       max-width: 620px;
+        width: 100%;
+    }
+    .main__top-commercial-title-subscription{
+        margin-left: 20px;
+        width:520px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:570px ) {
+    .main__top-commercial {
+        height: 500px;
+    }
+
+    .main__top-commercial-box1 {
+        max-width: 540px;
+        width: 100%;
+    }
+    .main__top-commercial-title{
+        width: 470px;
+        margin-top: 60px;
+        margin-left: 1px;
+    }
+
+    .main__top-commercial-title-subscription{
+        margin-left: 20px;
+        width: 450px;
+    }
+
+    .main__top-commercial-title-description{
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+}
+
+ @media screen and (max-width:495px ) {
+    .main__top-commercial-title {
+        width: 395px;
+        font-size: 16px;
+    }
+
+    .main__top-commercial-title-subscription {
+        width: 380px;
+        font-size: 14px;
+    }
+ }
+
+@media screen and (max-width:420px ) {
+
+    .main__top-commercial-title {
+        width: 298px;
+    }
+
+    .main__top-commercial-title-subscription {
+        width: 260px;
+    } 
+
+    .main__top-commercial-title-description{
+        margin-left: 1px;
+        margin-top: 100px;
+    }
+}
