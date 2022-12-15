@@ -103,7 +103,16 @@
 }
 
 .header__nav-mobile{
-    display: none;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: var(--gold);
+    width: 250px;
+    transform: translateX(-500px);
+    text-align: center;
+    z-index: 101;
+    transition: transform 0.8s;
 }
 
 .header__mobile-wrapper{
@@ -111,10 +120,8 @@
 }
 
 .header__nav-mobile--active {
-    display: block;
     transform: translateX(0);
 }
-
 
 
 .header__nav-mobile li:hover{
@@ -138,9 +145,6 @@
 .header__nav-mobile-list-item:hover .nav__link--header-mobile-sub-menu{
     display: block;
 }
-/* .nav__link--header-mobile-sub-menu:hover .nav__link--header-mobile-sub-menu-item{
-    display: block;
-} */
     
 .nav__link--header-mobile-sub-menu li:hover{
     background-color: var(--dark-gold);
@@ -200,7 +204,7 @@
     height: 62px;
     border-radius: 55px;
     border: 1px solid var(--gold);
-    background-image: url('../../images/acount.jpg');
+    background-image: url('../images/acount.jpg');
 }
 
 .header__account:hover{
@@ -281,7 +285,7 @@
 
     .header__commercial-title{
         margin-left: 250px;
-        width: 530px;
+        width: 560px;
     }
     
     .header__commercial-title-subscription{
@@ -349,18 +353,6 @@
     margin: 7px 0;
     }
 
-.header__nav-mobile {
-    padding-top: 50px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    transform: translateX(-249px);
-    background: var(--gold);
-    width: 250px;
-    text-align: center;
-    z-index: 101;
-    transition: transform 0.8s;
-}
 
 .header__log-in--mobile{
     width: 144px;
@@ -449,12 +441,12 @@
 @media screen and (max-width:640px ){
     .header__commercial-title{
         margin-left: 15px;
+        width: 515px;
     }
 
     .header__commercial-box1 {
         max-width: 450px;
         width: 100%;
-        height: 581px;
     }
     .header__commercial-title-subscription{
         margin-left: 20px;
@@ -471,7 +463,6 @@
     .header__commercial-box1 {
         max-width: 400px;
         width: 100%;
-        height: 501px;
     }
     .header__commercial-title{
         width: 470px;
@@ -498,7 +489,7 @@
     }
     
     .header__commercial-title {
-        width: 385px;
+        width: 395px;
         font-size: 16px;
     }
 
@@ -509,6 +500,19 @@
  }
 
 @media screen and (max-width:420px ) {
+
+    .header__nav-mobile{
+        width: 150px;
+    }
+
+    .nav__link--header-mobile {
+        font-size: 20px
+    }
+
+    .nav__link--header-mobile-sub-menu-link-description {
+        font-size: 16px;
+    }
+
     .header__mobile-wrapper{
         margin-top: 15px;
         flex-direction: column;
@@ -519,7 +523,7 @@
         height: 30px;
     }
     .header__commercial-title {
-        width: 295px;
+        width: 298px;
     }
 
     .header__commercial-title-subscription {

@@ -449,6 +449,10 @@
 }
 
 @media screen and (max-width:360px){
+    .product__info-img{
+        width: 289px; 
+        height: 330px;
+    }
 
     .product__info-box1 {
         margin-left: 10px;
