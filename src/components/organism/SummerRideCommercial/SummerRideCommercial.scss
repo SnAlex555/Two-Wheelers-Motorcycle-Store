@@ -1,0 +1,107 @@
+.summer-ride__commercial{
+    max-width: 1440px;
+    width: 100%;
+    height: 548px;
+    display: flex;
+    background-image: linear-gradient(90deg, rgba(205, 250, 253, 0.75) 0%, rgba(253, 253, 217, 0) 100%), url('/images/summer-commercial/summer-commercial-background.jpg');
+}
+
+.summer-ride__wrapper{
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.summer-ride__commercial-title{
+    padding-top: 75px; 
+    width: 689px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    color: var(--black);
+}
+
+.summer-ride__commercial-title-subscription{
+    margin-top: 50px;
+    width: 605px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--black);
+}
+
+.summer-ride__commercial-title-link{
+    margin-top: 50px;
+    width: 318px;
+    height: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--black);
+}
+
+@media screen and (max-width:768px ) {
+    .summer-ride__wrapper{
+        padding-left: 40px;
+    }
+
+    .summer-ride__commercial-title{
+        width: 562px;
+        font-size: 50px;
+    }
+
+    .summer-ride__commercial-title-subscription{
+        width: 512px;
+        font-size: 30px;
+}
+
+    .summer-ride__commercial-title-link{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:640px ) {
+    .summer-ride__commercial-title{
+        font-size: 38px;
+        width: 385px;
+    }
+
+    .summer-ride__commercial-title-subscription{
+        width:408px;
+        font-size: 24px;
+}
+
+    .summer-ride__commercial-title-link{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:570px ) {
+    .summer-ride__wrapper{
+        padding-left: 20px;
+    }
+  
+}
+
+@media screen and (max-width:495px ) {
+   
+    .summer-ride__commercial-title-subscription {
+        width: 270px;
+        font-size: 20px;
+}
+
+    .summer-ride__commercial-title {
+        width: 270px;
+        font-size: 32px;
+        }
+
+    .summer-ride__commercial-title-link{
+        font-size: 16px;
+        width: 205px;
+    }
+
+}

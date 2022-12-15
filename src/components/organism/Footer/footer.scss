@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .footer__box1{
@@ -38,6 +39,12 @@
     margin-right: 70px;
     margin-top: 50px;
 }
+
+
+.footer__ul{
+    list-style-type: none ;
+}
+
 
 .footer__two-wheelers-title{
     font-family: 'Inter';
@@ -112,7 +119,7 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
-    justify-content:end;
+    justify-content:flex-end;
 }
 
 .footer__bottom-wrapper {
@@ -374,4 +381,3 @@
         width: 200px;
     }
 }
-
