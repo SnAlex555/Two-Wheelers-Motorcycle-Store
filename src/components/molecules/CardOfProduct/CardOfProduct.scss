@@ -1,0 +1,100 @@
+.product__card{
+    width: 273px;
+    height: 423px;
+    border-radius: 10px;
+    background-color: var(--black);
+}
+
+.product__card-image{
+    margin-top: 13px;
+    margin-left: 13px;
+    border-radius: 10px;
+}
+
+.product__card-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product__card-stock-availability{
+    display: flex;
+}
+
+.product__title{
+    width: 184px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--gold);
+}
+
+.product__condition{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gold);
+}
+
+.product__price{
+    margin-top: 10px;
+    margin-left: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--gold);
+}
+
+.product__card-stock-availability{
+    margin-top: 30px;
+    margin-left: 13px;
+}
+
+.product__in-stock{
+    height: 38px;
+    width: 49px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gold);
+}
+
+.product__color{
+    margin-left: 43px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--gold);
+}
+
+.product__details{
+    margin-left: 75px;
+    margin-top: 35px;
+    width: 123px;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gold);
+}
+
+.product__details:hover{
+    cursor: pointer;
+}
+
+.product__details-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--black);
+}

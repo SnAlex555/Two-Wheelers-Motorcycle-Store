@@ -22,8 +22,12 @@ export class ProductCard extends Component {
                     </p>
                     <div class="product__info-colors">
                         <p class="product__info-color">Color(s):</p>
-                        <svg class="product__info-picture" src="/images/product-card-image/product-cart-icons/red.svg" alt="red" width="35px" height="35px" ></svg>
-                        <svg class="product__info-picture" src="/images/product-card-image/product-cart-icons/italian.svg" alt="italian" width="35px" height="35px"></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="product__info-picture" alt="red" width="35px" height="35px">
+                            <use xlink:href="../../assets/images/product-card-image/product-cart-icons/product-card-sprite.svg#red"></use>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="product__info-picture" alt="orange" width="35px" height="35px">
+                            <use xlink:href="../../assets/images/product-card-image/product-cart-icons/product-card-sprite.svg#orange"></use>
+                        </svg>
                     </div>
                     <p class="product__info-stock">
                         Stock: 2

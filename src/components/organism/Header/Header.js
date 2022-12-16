@@ -30,23 +30,27 @@ export class Header extends core.Component{
                             <ul class="header__navigation-sub-menu">
 
                                 <li>
-                                    <a href=" " class="header__navigation-sub-menu-link">
-                                        <p class="header__navigation-sub-menu-link-description">Showroom</p>
+                                    <motorcycle-link to= "${appRoutes.ourshowroom}"
+                                            <p class="header__navigation-sub-menu-link-description">Showroom</p>
+                                    </motorcycle-link>       
                                 </li>
 
                                 <li>
                                     <a href=" " class="header__navigation-sub-menu-link">
                                         <p class="header__navigation-sub-menu-link-description">Services</p>
+                                    </a>   
                                 </li>
 
                                 <li>
                                     <a href=" " class="header__navigation-sub-menu-link">
                                         <p class="header__navigation-sub-menu-link-description">Parts</p>
+                                    </a> 
                                 </li>
 
                                 <li>
                                     <a href=" " class="header__navigation-sub-menu-link">
                                         <p class="header__navigation-sub-menu-link-description">Test Drive</p>
+                                    </a> 
                                 </li>
 
                             </ul>
