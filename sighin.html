@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css"/>
+    <title>SignIn</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="header__navigation">
+
+            <a href="./Main.html">
+                <img class="header__logo" src="images/header-logo/two-wheelers-logo.svg" alt="two-wheelers-logo">
+            </a>
+
+            <div class="header__navigation-inner">
+                <ul class="header__navigation-list">
+
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-link--active" href="./Main.html">Home</a>
+                    </li>
+
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-link">Motorcycles</a>
+        
+                        <img class="header__navigation-sub-menu-arrow" src="./images/header-sub-menu/sub-menu-arrow.png" alt="sub-menu-arrow">
+                        
+                        <ul class="header__navigation-sub-menu">
+
+                            <li>
+                                <a href=" " class="header__navigation-sub-menu-link">
+                                    <p class="header__navigation-sub-menu-link-description">Showroom</p>
+                            </li>
+
+                            <li>
+                                <a href=" " class="header__navigation-sub-menu-link">
+                                    <p class="header__navigation-sub-menu-link-description">Services</p>
+                            </li>
+
+                            <li>
+                                <a href=" " class="header__navigation-sub-menu-link">
+                                    <p class="header__navigation-sub-menu-link-description">Parts</p>
+                            </li>
+
+                            <li>
+                                <a href=" " class="header__navigation-sub-menu-link">
+                                    <p class="header__navigation-sub-menu-link-description">Test Drive</p>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-link">Our Blog</a>
+                    </li>
+
+                    <li class="header__navigation-list-item">
+                        <a class="header__navigation-link">Contact Us</a>
+                    </li>
+
+                </ul>
+
+       
+           
+                <button class="header__log-in">
+                    <p class="header__log-in-text">Login</p>
+                </button>
+
+                <li class="header__burger">
+                    <svg class="header__burger-button" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="7" width="40" height="5" rx="2.5" fill="gold"/>
+                        <rect y="17" width="40" height="5" rx="2.5" fill="gold"/>
+                        <rect y="27" width="40" height="5" rx="2.5" fill="gold"/>
+                    </svg>
+                </li>
+
+                <div class="header__mobile-wrapper">
+
+                    <a href="./Main.html">
+                        <img class="header__logo--mobile" src="/images/header-logo/two-wheelers-logo.svg" alt="two-wheelers-logo">
+                    </a>
+
+                    <button class="header__log-in--mobile">
+                        <p class="header__log-in-text--mobile">Login</p>
+                    </button>
+
+                </div>  
+
+            </div>
+        </nav>  
+  
+                    <nav class="header__nav-mobile">
+                            <ul class="header__nav-mobile-list">
+                                <li class="header__nav-mobile-list-item" >
+                                    <a class="nav__link--header-mobile" href="#">
+                                        <p class="nav__link--header-mobile">Home</p>
+                                    </a>
+                                </li>
+                        
+                                <li class="header__nav-mobile-list-item" >
+
+                                    <a class="nav__link--header-mobile" href="#">
+                                        <p class="nav__link--header-mobile">Motorcycles</p>
+                                        
+                                    </a>
+                                
+                                    <ul class="nav__link--header-mobile-sub-menu">
+
+                                        <li class="nav__link--header-mobile-sub-menu-item">
+                                            <a href=" " class="nav__link--header-mobile-sub-menu-link">
+                                                <p class="nav__link--header-mobile-sub-menu-link-description">Showroom</p>
+                                        </li>
+        
+                                        <li class="nav__link--header-mobile-sub-menu-item">
+                                            <a href=" " class="header__navigation-sub-menu-link">
+                                                <p class="nav__link--header-mobile-sub-menu-link-description">Services</p>
+                                        </li>
+        
+                                        <li class="nav__link--header-mobile-sub-menu-item">
+                                            <a href=" " class="header__navigation-sub-menu-link">
+                                                <p class="nav__link--header-mobile-sub-menu-link-description">Parts</p>
+                                        </li>
+        
+                                        <li class="nav__link--header-mobile-sub-menu-item">
+                                            <a href=" " class="header__navigation-sub-menu-link">
+                                                <p class="nav__link--header-mobile-sub-menu-link-description">Test Drive</p>
+                                        </li>
+    
+                                    </ul>
+                                    
+                                </li>
+
+                                <li class="header__nav-mobile-list-item" >
+                                    <a class="nav__link--header-mobile" href="#">
+                                        <p class="nav__link--header-mobile">Our Blog</p>
+                                    </a>
+                                </li>
+
+                                <li class="header__nav-mobile-list-item" >
+                                    <a class="nav__link--header-mobile" href="#">
+                                        <p class="nav__link--header-mobile">Contact Us</p> 
+                                    </a>
+                                </li>
+
+                            </ul>  
+                    </nav>
+
+    </header>     
+
+    <main>
+     <section class="registration-form">
+            <form class="sign-in__form">
+                <div class="sign-in__row">
+                <label for="inputEmail" class="sign-in__label form-label">Email</label>
+                    <div class="sign-in__input">
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                </div>
+
+                <div class="sign-in__row">
+                <label for="inputPassword" class="sign-in__label form-label">Password</label>
+                    <div class="sign-in__input">
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit__button">Sign in</button>
+            </form>
+        </section>
+    </main>   
+    
+    
+    <footer class="footer">
+
+        <div class="footer__wrapper">
+            <div class="footer__top">
+
+                <div class="footer__box1">
+                    <h4 class="footer__two-wheelers-title">two wheelers
+                    </h4>
+
+                    <p class="footer__adress">2005 Broken Dream Blvd
+                        Daytona Beach, FL 32122
+                    </p>
+
+                    <p class="footer__telephone">(343)-7509-2453
+                    </p>
+
+                </div>
+
+                <div class="footer__box2">
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a class="footer__link" href>New Inventory</a>
+                        </li>
+
+                        <li class="footer__li">
+                            <a class="footer__link" href>Used Inventory</a>
+                        </li>
+
+                        <li class="footer__li">
+                            <a class="footer__link" href>Service Center</a>
+                        </li>
+
+                        <li class="footer__li">
+                            <a class="footer__link" href>Custom Parts</a>
+                        </li>
+
+                        <li class="footer__li">
+                            <a class="footer__link" href>Riding Tips</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="footer__box3">
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a class="footer__link" href>Test Ride</a>
+                        </li>
+
+                        <li class="footer__li">
+                            <a class="footer__link" href>Finance</a>
+                        </li>
+
+                        <li class="footer__li">
+                            <a class="footer__link" href>Our Blog</a>
+                        </li>
+
+                        <li class="footer__li">
+                            <a class="footer__link" href>About Us</a>
+                        </li>
+
+                        <li class="footer__li">
+                            <a class="footer__link" href>Media</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer__box4">
+
+                    <h4 class="footer__store_hours-title">STORE HOURS
+                    </h4>
+
+                    <p class="footer__working-hours">Weekdays: 8 AM - 3 PM
+                    </p>
+
+                    <p class="footer__working-hours">Saturday: 8 AM - 2 PM
+                    </p>
+
+                    <p class="footer__working-hours">Sunday/National Holiday: Closed</p>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+
+                <div class="footer__bottom-wrapper">
+                        <div class="footer__copyrights">
+                            <p class="footer__copyrights-description">©2021 TwoWheelers.com. All rights reserved</p>
+                        </div>
+        
+                        <div class="footer__icons">
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="19px" height="40px">
+                                <use xlink:href="./images/footer/footer-sprite.svg#facebook"></use>
+                            </svg>
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="37px" height="37px">
+                                <use xlink:href="./images/footer/footer-sprite.svg#insta"></use>
+                            </svg>
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="37px" height="37px">
+                                <use xlink:href="./images/footer/footer-sprite.svg#in"></use>
+                            </svg>
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="40px" height="40px">
+                                <use xlink:href="./images/footer/footer-sprite.svg#youtube"></use>
+                            </svg>
+        
+                        </div>
+                </div>
+            </div>
+        </div> 
+
+            <div class="footer__wrapper-wrapper">
+                <div class="footer__top">
+                        <div class="footer__wrapper-container1">   
+                            <div class="footer__box1-wrapper-wrapper">
+                                <h4 class="footer__two-wheelers-title">two wheelers
+                                </h4>
+
+                                <p class="footer__adress">2005 Broken Dream Blvd
+                                    Daytona Beach, FL 32122
+                                </p>
+
+                                <p class="footer__telephone">(343)-7509-2453
+                                </p>
+
+                            </div>
+
+                            <div class="footer__box2-wrapper-wrapper">
+                                
+                                <h4 class="footer__store_hours-title">STORE HOURS
+                                </h4>
+
+                                <p class="footer__working-hours">Weekdays: 8 AM - 3 PM
+                                </p>
+
+                                <p class="footer__working-hours">Saturday: 8 AM - 2 PM
+                                </p>
+
+                                <p class="footer__working-hours">Sunday/National Holiday: Closed</p>
+                                
+                            </div>
+
+                        </div> 
+
+                        <div class="footer__wrapper-container2"> 
+                            <div class="footer__box3-wrapper-wrapper">
+                                <ul class="footer__ul">
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>Test Ride</a>
+                                    </li>
+
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>Finance</a>
+                                    </li>
+
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>Our Blog</a>
+                                    </li>
+
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>About Us</a>
+                                    </li>
+
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>Media</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="footer__box4-wrapper-wrapper">
+                                <ul class="footer__ul">
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>New Inventory</a>
+                                    </li>
+
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>Used Inventory</a>
+                                    </li>
+
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>Service Center</a>
+                                    </li>
+
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>Custom Parts</a>
+                                    </li>
+
+                                    <li class="footer__li">
+                                        <a class="footer__link" href>Riding Tips</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                </div>
+
+            </div>     
+
+            <div class="footer__bottom">
+
+                <div class="footer__bottom-wrapper">
+                        <div class="footer__copyrights">
+                            <p class="footer__copyrights-description">©2021 TwoWheelers.com. All rights reserved</p>
+                        </div>
+        
+                        <div class="footer__icons">
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="19px" height="40px">
+                                <use xlink:href="./images/footer/footer-sprite.svg#facebook"></use>
+                            </svg>
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="37px" height="37px">
+                                <use xlink:href="./images/footer/footer-sprite.svg#insta"></use>
+                            </svg>
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="37px" height="37px">
+                                <use xlink:href="./images/footer/footer-sprite.svg#in"></use>
+                            </svg>
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="40px" height="40px">
+                                <use xlink:href="./images/footer/footer-sprite.svg#youtube"></use>
+                            </svg>
+        
+                        </div>
+                </div>
+            </div>
+
+        
+
+    </footer>  
+</body>
+</html>

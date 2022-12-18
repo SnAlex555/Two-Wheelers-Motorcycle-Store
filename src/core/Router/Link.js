@@ -1,31 +1,34 @@
-import { Component } from "../Component";
+import { appEvents } from "../../constants/appEvents"
+import { Component } from "../Component"
+import { eventBus } from "../EventBus/EventBus"
+import './Link.scss'
 
 export class Link extends Component {
-    constructor() {
-        super();
-        this.IsShadow = true
-    }
+  constructor() {
+    super();
+    this.isShadow = true
+  }
 
-   static get obsrvedAttributes() {
-    return ['to']
-   }
+  static get observedAttributes() {
+    return ["to"];
+  }
 
-   OnClick = (evt) => {
-        evt.preventDefault();
-        this.dataset('change-route', { target: this.props.to})
-   }
+  onClick = (evt) => {
+    evt.preventDefault();
+    eventBus.emit('change-route', { target: this.props.to });
+  };
 
-   componentWillUnmount(){
-      this.addEventListener('click', this.onClick)
-   }
+  componentDidMount() {
+    this.addEventListener("click", this.onClick);
+  }
 
-   componentWillUnmount(){
-        this.removeEventListener('click', this.onClick)
-   }
+  componentWillUnmount() {
+    this.removeEventListener("click", this.onClick);
+  }
 
    render () {
         return `
-            <a href="${thisprops.to}">
+            <a href="${this.props.to}" class="motorcycle-link">
                 <slot></slot>
             </a>
         `

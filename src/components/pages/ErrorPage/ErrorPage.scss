@@ -1,0 +1,191 @@
+.error__page {
+    height: 813px;
+    display: flex;
+    flex-direction: row;
+}
+
+.error__page-box1{
+    width:548px;
+    height: 813px;
+    background-color: var(--white);
+}
+
+
+.error__page-box2{
+    width: 893px;
+    height: 813px;
+    background-image: linear-gradient(89.83deg, #FFFFFF 10.53%, rgba(37, 44, 51, 0) 99.85%), url('../../../assets/images/error-page/error-page-background.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.error__page-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    color: var(--black);
+    margin-top: 150px;
+    margin-left: 99px;
+}
+
+.error__page-subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;      
+    color: var(--black);
+    margin-left: 99px;
+}
+
+.error__page-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--black);
+    margin-left: 99px;
+    margin-top: 50px;
+}
+
+.error__page-link-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 208px;
+    margin-top: 72px;
+}
+
+.error__page-link{
+    
+    color: var(--black);
+}
+
+@media screen and (max-width:1280px) {
+    .error__page-link-text {
+        margin-left: 170px;
+    }
+}
+    
+@media screen and (max-width:1024px) {
+
+    .error__page-title{
+        margin-left: 80px;
+        font-size: 50px;
+    }
+
+    .error__page-subtitle{
+        margin-left: 80px;
+        font-size: 36px;   
+    }
+
+    .error__page-description{
+    margin-left: 80px;
+    font-size: 22px;
+}
+
+    .error__page-link-text {
+    margin-left: 135px;
+    font-size: 22px;
+}
+}
+
+@media screen and (max-width:912px) {
+
+    .error__page-title{
+        margin-left: 60px;
+
+    }
+
+    .error__page-subtitle{
+        margin-left: 60px ;
+    }
+
+    .error__page-description{
+    margin-left: 60px;
+    }
+
+    .error__page-link-text {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .error__page-title{
+        margin-left: 35px;
+        font-size: 46px;
+    }
+
+    .error__page-subtitle{
+        margin-left: 35px ;
+        font-size: 30px;
+    }
+
+    .error__page-description{
+        margin-left: 25px;
+        font-size: 18px;
+    }
+
+    .error__page-link-text {
+        margin-left:50px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .error__page-title{
+        margin-left: 25px;
+        font-size: 38px;
+    }
+
+    .error__page-subtitle{
+        margin-left: 25px ;
+        font-size: 24px;
+    }
+
+    .error__page-description{
+        margin-top:35px;
+        font-size: 16px;
+    }
+
+    .error__page-link-text {
+        margin-top:50px;
+        font-size: 18px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .error__page-box2{
+     display: none;   
+}
+    .error__page-box1  {
+        background: url('../../../assets/images/error-page/error-page-smile.jpg') no-repeat;
+        background-position: center;
+}
+
+.error__page-title{
+    margin-left: 15px;
+    margin-top: 110px;
+    font-size: 20px
+}
+
+.error__page-subtitle{
+    margin-left: 15px ;
+    font-size: 18px;
+}
+
+.error__page-description{
+    margin-top:25px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.error__page-link-text {
+    margin-top:35px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+}

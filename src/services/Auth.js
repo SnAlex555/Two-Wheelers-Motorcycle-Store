@@ -1,4 +1,9 @@
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, 
+    createUserWithEmailAndPassword, 
+    signInWithEmailAndPassword, 
+    signOut, 
+    onAuthStateChanged 
+} from "firebase/auth";
 import { cloudService } from "./Cloud";
 
 export class AuthService {

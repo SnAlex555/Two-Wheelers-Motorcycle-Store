@@ -61,4 +61,4 @@ export class Preloader extends Component {
       }
 }
 
-customElements.define('avion-preloader', Preloader)
+customElements.define('motorcycle-preloader', Preloader)

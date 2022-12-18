@@ -1,4 +1,7 @@
-import { Component } from "../../../core";
+import { Component } from "../../../core"
+import { databaseService } from "../../../services/Database"
+import "../../organism"
+import '../../../components'
 
 export class HomePage extends Component {
     render() {

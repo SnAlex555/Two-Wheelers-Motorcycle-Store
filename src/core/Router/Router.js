@@ -1,6 +1,9 @@
+import { matchRoute } from "./utils"
+import { eventBus } from "../EventBus/EventBus"
+
 export class Router extends HTMLElement {
     get outlet () {
-        return this.querrySelector ('motorcycle-outlet')
+        return this.querySelector('motorcycle-outlet')
     }
     get routes() {
         return Array.from(this.querySelectorAll('motorcycle-route'))
@@ -51,15 +54,15 @@ export class Router extends HTMLElement {
     }
  
     connectedCallback() {
-        this.navigate(window.location.pathname)
-        this.addEventListener('popstate', this.onPopState)
-        this.addEventListener('change-route', this.onChangeRoute)
-    }
-
-    disconnectedCallback() {
-        this.removeEventListener('popstate', this.onPopState)
-        this.removeEventListener('change-route', this.onChangeRoute)
-    }
+        this.navigate(window.location.pathname);
+        window.addEventListener("popstate", this.onPopState);
+        eventBus.on("change-route", this.onChangeRoute);
+      }
+    
+      disconnectedCallback() {
+        this.removeEventListener("popstate", this.onPopState);
+        eventBus.off("change-route", this.onChangeRoute);
+      }
 }
 
 customElements.define('motorcycle-router', Router)

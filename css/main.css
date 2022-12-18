@@ -12,3 +12,6 @@
 @import url('./components/our-showroom/our-showroom-filter.css');
 @import url('./components/search-results/search-results.css');
 @import url('./components/product-card/product-card.css');
+@import url('./components/error-page/error-page.css');
+@import url('./components/sign-in/sign-in.css');
+@import url('./components/sign-up/sign-up.css');

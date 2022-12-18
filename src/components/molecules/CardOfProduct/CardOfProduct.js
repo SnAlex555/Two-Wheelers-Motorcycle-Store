@@ -4,7 +4,7 @@ import './CardOfProduct.scss'
 export class CardOfProduct extends Component {
     render () {
         return `
-            <div class="product__card">
+        <div class="product__card">
 
             <img class="product__card-image" src="./images/our-showroom/Suzuki GSX-R1000 (2004).jpg" alt="suzuki-GSX-R1000">
 
@@ -23,7 +23,7 @@ export class CardOfProduct extends Component {
             <button class="product__details">
             <p class="product__details-description">Details
             </button>
-            </div>
+        </div>
         `
     }
 }

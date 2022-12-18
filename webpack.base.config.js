@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const fs = require("fs");
+const Dotenv = require('dotenv-webpack');
 
 const PATHS = {
   src: path.resolve(__dirname, "./src"),
