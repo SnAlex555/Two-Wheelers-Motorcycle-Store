@@ -1,5 +1,5 @@
 import { Component } from "../../../core"
-import { databaseService } from "../../../services/Database"
+import { databaseService } from '../../../services/Database'
 import "../../organism"
 import '../../../components'
 

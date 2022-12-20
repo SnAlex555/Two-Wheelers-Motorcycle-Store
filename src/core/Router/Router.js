@@ -1,5 +1,5 @@
 import { matchRoute } from "./utils"
-import { eventBus } from "../EventBus/EventBus"
+// import { eventBus } from "../EventBus/EventBus"
 
 export class Router extends HTMLElement {
     get outlet () {
@@ -55,13 +55,13 @@ export class Router extends HTMLElement {
  
     connectedCallback() {
         this.navigate(window.location.pathname);
-        window.addEventListener("popstate", this.onPopState);
-        eventBus.on("change-route", this.onChangeRoute);
+        this.addEventListener("popstate", this.onPopState);
+        window.addEventListener("change-route", this.onChangeRoute);
       }
     
       disconnectedCallback() {
         this.removeEventListener("popstate", this.onPopState);
-        eventBus.off("change-route", this.onChangeRoute);
+        window.removeEventListener("change-route", this.onChangeRoute);
       }
 }
 

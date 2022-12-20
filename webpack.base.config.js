@@ -89,6 +89,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new Dotenv(),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/index.html`,
       filename: `${PATHS.dist}/index.html`,

@@ -1,6 +1,6 @@
 import { appEvents } from "../../../constants/appEvents";
 import { appRoutes } from '../../../constants/appRoutes'
-import { eventBus } from "../../../core";
+// import { eventBus } from "../../../core";
 import * as core from '../../../core'
 import './header.scss'
 
@@ -17,14 +17,14 @@ export class Header extends core.Component{
         return ["is-logged"];
       }
     
-      onSignOut = (evt) => {
-        evt.preventDefault();
-        if (evt.target.closest(".sign-out-link")) {
-          eventBus.emit(appEvents.userLoggedOut);
+    onSignOut = (evt) => {
+        evt.preventDefault()
+        if(evt.target.closest('.sign-out-link')) {
+            this.dispatch('user-is-logouted')
         }
-      };
+    }
     
-      onChangeRoute = (evt) => {
+    onChangeRoute = (evt) => {
         this.setState((state) => {
           return {
             ...state,
@@ -38,9 +38,8 @@ export class Header extends core.Component{
       }
     
       componentDidMount() {
-        eventBus.on(appEvents.changeRoute, this.onChangeRoute);
-        this.addEventListener("click", this.onSignOut);
-      }
+        this.addEventListener('click', this.onSignOut);
+    }
     
       componentWillUnmount() {
         this.removeEventListener("click", this.onSignOut);
@@ -73,16 +72,35 @@ export class Header extends core.Component{
                         </li>
 
                         <li class="header__navigation-list-item">
-                        <motorcycle-link to="${appRoutes.signIn}">
-                           SignIn
-                        </motorcycle-link>
+                            <motorcycle-link to="${appRoutes.admin}">
+                                Admin
+                            </motorcycle-link>
                         </li>
 
-                        <li class="header__navigation-list-item">
-                        <motorcycle-link to="${appRoutes.signUp}">
-                            SignUp
-                        </motorcycle-link>
-                        </li>
+                      
+                        ${
+                          JSON.parse(this.props['is-logged'])
+                          ?`
+                              <li class="header__navigation-list-item">
+                                  <a href="#" class="sign-out-link">
+                                      <span class="link">Sign Out</span>
+                                  </a>
+                              </li>
+                            `
+                          : `
+                          <li class="header__navigation-list-item">
+                          <motorcycle-link to="${appRoutes.signIn}">
+                             Sign In
+                          </motorcycle-link>
+                          </li>
+  
+                          <li class="header__navigation-list-item">
+                          <motorcycle-link to="${appRoutes.signUp}">
+                              Sign Up
+                          </motorcycle-link>
+                          </li>
+                          `
+                        }
                     </ul>
 
            

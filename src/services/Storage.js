@@ -1,21 +1,42 @@
-import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { cloudService } from "./Cloud";
+import { getStorage, ref, uploadBytes } from 'firebase/storage';
+import { cloudService } from './Cloud';
 
-class Storage {
-  constructor() {
-    this.storage = getStorage(cloudService.app);
-  }
+    class Storage {
+        constructor() {
+            this.storage = getStorage(cloudService.app);
+        }
 
-
-  uploadPoster(file) {
-    const posterRef = ref(this.storage, `/posters/${file.name}`);
-    return uploadBytes(posterRef, file);
-  }
-
-  getDownloadURL(ref) {
-    return getDownloadURL(ref);
-  }
+    uploadPoster(file) {
+        const posterRef = ref(this.storage, `/posters/${file.name}`);
+        return uploadBytes(posterRef, file);
+    }
+    getDownloadURL(ref) {
+        return getDownloadURL(ref)
+    }
 
 }
 
-export const storageService = new Storage();
+export const storageService = new Storage()
+
+
+// import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+// import { cloudService } from "./Cloud";
+
+// class Storage {
+//   constructor() {
+//     this.storage = getStorage(cloudService.app);
+//   }
+
+
+//   uploadPoster(file) {
+//     const posterRef = ref(this.storage, `/posters/${file.name}`);
+//     return uploadBytes(posterRef, file);
+//   }
+
+//   getDownloadURL(ref) {
+//     return getDownloadURL(ref);
+//   }
+
+// }
+
+// export const storageService = new Storage();
