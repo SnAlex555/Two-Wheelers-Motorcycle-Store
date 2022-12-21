@@ -4,9 +4,6 @@ import { appRoutes } from './constants/appRoutes'
 import { authService } from './services/Auth'
 import "./auth/PrivateRoute"
 
-// import { eventBus } from "./core"
-// import { appEvents } from "./constants/appEvents"
-// import "./auth/PrivateRoute"
 
 export class App extends core.Component {
 
@@ -66,7 +63,6 @@ export class App extends core.Component {
             }
          });
       })
-
       .catch((error) => {
          this.setState((state) => {
             return {
@@ -129,92 +125,3 @@ export class App extends core.Component {
 
 customElements.define("motorcycle-app", App);
            
-{/* <private-route path="${appRoutes.admin}" component="admin-page" title="Admin"></private-route> */}
-
-//   constructor() {
-//     super()
-//     this.state = {
-//        isLoading: false,
-//        error: '',
-//        isLogged: false,
-//     }
-//  }
-
-//  toggleIsLoading() {
-//     this.setState((state) => {
-//        return {
-//           ...state,
-//           isLoading: !state.isLoading,
-//        };
-//     })
-//  }
-
-//  getUser() {
-//     this.toggleIsLoading()
-//     authService
-//        .init()
-//        .then((user) => {
-//           authService.user = user
-//           this.setState((state) => {
-//              return {
-//                 ...state,
-//                 isLogged: Boolean(user)
-//              }
-//           })
-//        })
-//        .catch((error) => {
-//           this.setState((state) => {
-//              return {
-//                 ...state,
-//                 error: error.message
-//              }
-//           })
-//        })
-//        .finally(() => {
-//           this.toggleIsLoading()
-//        })
-//  }
-
-//    onSignOut = () => {
-//       this.toggleIsLoading()
-//       authService.signOut()
-//          .then(() => {
-//             this.setState((state) => {
-//                return {
-//                   ...state,
-//                   isLogged: false,
-//                }
-//             })
-//          })
-//        .catch((error) => {
-//           this.setState((state) => {
-//              return {
-//                 ...state,
-//                 error: error.message
-//              }
-//           })
-//        })
-//        .finally(() => {
-//           this.toggleIsLoading()
-//        })
-//  }
-
-//       setIsLogged = () => {
-//          this.setState((state) => {
-//             return {
-//                ...state,
-//                isLogged: true,
-//             }
-//          })
-//       }
-
-//       componentDidMount() {
-//          this.getUser();
-//          eventBus.on(appEvents.userAuthorized, this.setIsAuthorized);
-//          eventBus.on(appEvents.userLoggedOut, this.onLogOut);
-//       }
-
-//       componentWillUnmount() {
-//          eventBus.off(appEvents.userAuthorized, this.setIsAuthorized);
-//          eventBus.off(appEvents.userLoggedOut, this.onLogOut);
-//       }

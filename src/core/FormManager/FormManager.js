@@ -53,5 +53,4 @@ export class FormManager {
             ref.querySelector(`input[name="${key}"]`).addEventListener('blur', this.validate(key));
         });
     }
-
 }

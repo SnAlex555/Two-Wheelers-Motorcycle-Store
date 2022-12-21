@@ -39,15 +39,14 @@ export class ShowroomFilter extends Component {
 
                                 <div class="search__box2">
                                     <select class="search-box__input3">
-                                        <option class="search-box__input-option" value="1">All Categories</option>
-                                        <option class="search-box__input-option" value="2">Adventure</option>
-                                        <option class="search-box__input-option" value="3">ATV</option>
-                                        <option class="search-box__input-option" value="4">Cruiser</option>
-                                        <option class="search-box__input-option" value="5">Scooter</option>
-                                        <option class="search-box__input-option" value="6">Sport Naked</option>
-                                        <option class="search-box__input-option" value="7">Sport Touring</option>
-                                        <option class="search-box__input-option" value="8">Street</option>
-                                        <option class="search-box__input-option" value="9">Supersport</option>
+                                        <option class="search-box__input-option" value="1">All Colors</option>
+                                        <option class="search-box__input-option" value="2">Red</option>
+                                        <option class="search-box__input-option" value="3">Blue</option>
+                                        <option class="search-box__input-option" value="4">Green</option>
+                                        <option class="search-box__input-option" value="5">Orange</option>
+                                        <option class="search-box__input-option" value="6">Black</option>
+                                        <option class="search-box__input-option" value="7">Silver</option>
+                                        <option class="search-box__input-option" value="8">White</option>
                                     </select>
                                     <input class="search__box-text-input" type="text" placeholder="Select model manually" >
                 

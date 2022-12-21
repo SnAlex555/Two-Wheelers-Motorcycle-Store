@@ -5,7 +5,8 @@ import { getFirestore,
     getDocs, 
     doc, 
     updateDoc, 
-    deleteDoc, 
+    deleteDoc,
+    getDoc,
 } from 'firebase/firestore';
 
 class DatabaseService {

@@ -1,21 +1,20 @@
 import { appEvents } from "../../../constants/appEvents";
 import { appRoutes } from '../../../constants/appRoutes'
-// import { eventBus } from "../../../core";
 import * as core from '../../../core'
 import './header.scss'
 
 export class Header extends core.Component{
 
-    constructor() {
-        super();
-        this.state = {
+  constructor() {
+      super();
+      this.state = {
           activePath: window.location.pathname,
-        };
-      }
+      };
+    }
     
-      static get observedAttributes() {
-        return ["is-logged"];
-      }
+    static get observedAttributes() {
+      return ["is-logged"];
+    }
     
     onSignOut = (evt) => {
         evt.preventDefault()
@@ -61,7 +60,7 @@ export class Header extends core.Component{
                     <ul class="header__navigation-list">
                         <li class="header__navigation-list-item">
                             <motorcycle-link to="${appRoutes.home}">
-                                Home
+                              Home
                             </motorcycle-link>
                         </li>
 
@@ -76,11 +75,10 @@ export class Header extends core.Component{
                                 Admin
                             </motorcycle-link>
                         </li>
-
                       
                         ${
                           JSON.parse(this.props['is-logged'])
-                          ?`
+                          ? `
                               <li class="header__navigation-list-item">
                                   <a href="#" class="sign-out-link">
                                       <span class="link">Sign Out</span>
@@ -88,18 +86,18 @@ export class Header extends core.Component{
                               </li>
                             `
                           : `
-                          <li class="header__navigation-list-item">
-                          <motorcycle-link to="${appRoutes.signIn}">
-                             Sign In
-                          </motorcycle-link>
-                          </li>
-  
-                          <li class="header__navigation-list-item">
-                          <motorcycle-link to="${appRoutes.signUp}">
-                              Sign Up
-                          </motorcycle-link>
-                          </li>
-                          `
+                            <li class="header__navigation-list-item">
+                              <motorcycle-link to="${appRoutes.signIn}">
+                                Sign In
+                              </motorcycle-link>
+                            </li>
+
+                            <li class="header__navigation-list-item">
+                              <motorcycle-link to="${appRoutes.signUp}">
+                                  Sign Up
+                              </motorcycle-link>
+                            </li>
+                            `
                         }
                     </ul>
 

@@ -1,93 +1,132 @@
-import { Componen, Component } from "../../../core"
-import './ProductCard.scss'
+import * as core from "../../../core"
+import "./ProductCard.scss"
 
-export class ProductCard extends Component {
+export class ProductCard extends core.Component {
+    static get observedAttributes(){
+        return ["id"]
+    }
+
+    toggleIsLoading() {
+        this.setState((state) => {
+          return {
+            ...state,
+            isLoading: !state.isLoading,
+          };
+        });
+      }
+    
+      getMotorcycle() {
+        this.toggleIsLoading();
+        databaseService
+          .getDocument("motorcycle", this.props.id)
+          .then((data) => {
+            this.setState((state) => {
+              return {
+                ...state,
+                motorcycle: data.data(),
+              };
+            });
+          })
+          .finally(() => {
+            this.toggleIsLoading();
+          });
+      }
+    
+      componentDidMount() {
+        this.getMotorcycle();
+      }
+
     render () {
         return `
-        <section class="product__info">
+        ${!this.state.motorcycle 
+            ? `<motorcycle-preloader is-loading="${this.state.isLoading}"></motorcycle-preloader>`
+            : `   
+            <section class="product__info">
 
-            <div class="product__info-box1">
+                <div class="product__info-box1">
 
-                <img class="product__info-img" src="./images/product-card-image/Ducati-1199-Panigale.jpg" alt="Ducati-1199-Panigale">
+                    <img class="product__info-img" src="./images/product-card-image/Ducati-1199-Panigale.jpg" alt="Ducati-1199-Panigale">
 
-                <div class="product__info-information">
-                    <p class="product__info-description">
-                        Ducati 1199 Panigale (2012)
-                    </p>
-                    <p class="product__info-status">
-                        Status: Used
-                    </p>
-                    <p class="product__info-price">
-                        $12,499 - $12,999
-                    </p>
-                    <div class="product__info-colors">
-                        <p class="product__info-color">Color(s):</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="product__info-picture" alt="red" width="35px" height="35px">
-                            <use xlink:href="../../assets/images/product-card-image/product-cart-icons/product-card-sprite.svg#red"></use>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="product__info-picture" alt="orange" width="35px" height="35px">
-                            <use xlink:href="../../assets/images/product-card-image/product-cart-icons/product-card-sprite.svg#orange"></use>
-                        </svg>
-                    </div>
-                    <p class="product__info-stock">
-                        Stock: 2
-                    </p>
-                    <div class="product__info-add-buttons">
-                        <button class="product__info-add-to-cart">
-                            <p class="product__info-add-to">Add to Cart</p>
-                        </button>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="product__info-box2">
-
-                <div class="specification__box">
-
-                    <button class="specification__button">
-                        <p class="specification__description">Specifications</p>
-                    </button>
-
-                    <button class="return__button">
-                        <p class="specification__description">Return to Showroom</p>
-                    </button>
-
-
-                </div>
-
-                <div class="check__other-box">
-
-                    <h4 class="check__other-title">Check other motorcycles</h4>
-                        <div class="check__other-items">
-
-                            <div class="check__other-item1-container">
-                                <button class="item1__button"></button>
-                                <p class="item_description">Yamaha R6 (2020)</p>
-                                <p class="item_price">$13,749</p>
-                            </div>
-
-                            <div class="check__other-item2-container">
-                                <button class="item2__button"></button>
-                                <p class="item_description">Triumph Street Triple R (2020)</p>
-                                <p class="item_price">$10,499</p>
-                            </div>
-
-                            <div class="check__other-item3-container">
-                                <button class="item3__button"></button>
-                                <p class="item_description">Kawasaki Ninja H2 (2019)</p>
-                                <p class="item_price">$24,499</p>
-                            </div>
-                            
+                    <div class="product__info-information">
+                        <p class="product__info-description">
+                            Ducati 1199 Panigale (2012)
+                        </p>
+                        <p class="product__info-status">
+                            Status: Used
+                        </p>
+                        <p class="product__info-price">
+                            $12,499 - $12,999
+                        </p>
+                        <div class="product__info-colors">
+                            <p class="product__info-color">Color(s):</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="product__info-picture" alt="red" width="35px" height="35px">
+                                <use xlink:href="../../assets/images/product-card-image/product-cart-icons/product-card-sprite.svg#red"></use>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="product__info-picture" alt="orange" width="35px" height="35px">
+                                <use xlink:href="../../assets/images/product-card-image/product-cart-icons/product-card-sprite.svg#orange"></use>
+                            </svg>
                         </div>
+                        <p class="product__info-stock">
+                            Stock: 2
+                        </p>
+                        <div class="product__info-add-buttons">
+                            <button class="product__info-add-to-cart">
+                                <p class="product__info-add-to">Add to Cart</p>
+                            </button>
+                        </div>
+
+                    </div>
+
                 </div>
 
-            </div>
-            
-        </section>
-    `
+                <div class="product__info-box2">
+
+                    <div class="specification__box">
+
+                        <button class="specification__button">
+                            <p class="specification__description">Specifications</p>
+                        </button>
+
+                        <button class="return__button">
+                            <p class="specification__description">Return to Showroom</p>
+                        </button>
+
+
+                    </div>
+
+                    <div class="check__other-box">
+
+                        <h4 class="check__other-title">Check other motorcycles</h4>
+                            <div class="check__other-items">
+
+                                <div class="check__other-item1-container">
+                                    <button class="item1__button"></button>
+                                    <p class="item_description">Yamaha R6 (2020)</p>
+                                    <p class="item_price">$13,749</p>
+                                </div>
+
+                                <div class="check__other-item2-container">
+                                    <button class="item2__button"></button>
+                                    <p class="item_description">Triumph Street Triple R (2020)</p>
+                                    <p class="item_price">$10,499</p>
+                                </div>
+
+                                <div class="check__other-item3-container">
+                                    <button class="item3__button"></button>
+                                    <p class="item_description">Kawasaki Ninja H2 (2019)</p>
+                                    <p class="item_price">$24,499</p>
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                </div>
+                
+            </section>
+        `
+        }
+        `;
     }
-}
+    }
 
 customElements.define('motorcycle-product-card', ProductCard)
