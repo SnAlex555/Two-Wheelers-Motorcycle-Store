@@ -1,0 +1,32 @@
+.mt-5{
+    background-color: var(--black);
+    margin-bottom: 252px;
+}
+
+.btn-primary{
+    background-color: var(--gold); 
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+}
+
+.btn-primary:hover{
+    background-color: var(--gold);
+}
+
+.form__title{
+    padding-top: 25px;
+    color: var(--gold); 
+}
+
+.col-form-label{
+    color: var(--gold);
+    padding-left: 75px;
+    margin-top:  35px;
+}
+
+.col-sm-10{
+    margin-top: 30px;
+    width: 70.333333%;
+}

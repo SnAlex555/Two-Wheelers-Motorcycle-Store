@@ -1,5 +1,6 @@
 import { appEvents } from "../../../constants/appEvents";
 import { appRoutes } from '../../../constants/appRoutes'
+import { eventBus } from "../../../core";
 import * as core from '../../../core'
 import './header.scss'
 
@@ -17,11 +18,11 @@ export class Header extends core.Component{
     }
     
     onSignOut = (evt) => {
-        evt.preventDefault()
-        if(evt.target.closest('.sign-out-link')) {
-            this.dispatch('user-is-logouted')
-        }
-    }
+      evt.preventDefault();
+      if (evt.target.closest(".sign-out-link")) {
+        eventBus.emit(appEvents.userLoggedOut);
+      }
+    };
     
     onChangeRoute = (evt) => {
         this.setState((state) => {
@@ -37,8 +38,9 @@ export class Header extends core.Component{
       }
     
       componentDidMount() {
-        this.addEventListener('click', this.onSignOut);
-    }
+        eventBus.on(appEvents.changeRoute, this.onChangeRoute);
+        this.addEventListener("click", this.onSignOut);
+      }
     
       componentWillUnmount() {
         this.removeEventListener("click", this.onSignOut);
@@ -60,41 +62,42 @@ export class Header extends core.Component{
                     <ul class="header__navigation-list">
                         <li class="header__navigation-list-item">
                             <motorcycle-link to="${appRoutes.home}">
-                              Home
+                             <span class="link ${this.isActiveLink(appRoutes.home)}">Home</span>
                             </motorcycle-link>
                         </li>
 
                         <li class="header__navigation-list-item">
                             <motorcycle-link to="${appRoutes.productShowroomFilter}">
-                                Motorcycles
+                              <span class="link ${this.isActiveLink(appRoutes.productShowroomFilter)}">Motorcycles</span>
                             </motorcycle-link>
                         </li>
 
                         <li class="header__navigation-list-item">
                             <motorcycle-link to="${appRoutes.admin}">
-                                Admin
+                              <span class="link ${this.isActiveLink(appRoutes.admin)}">Admin</span>
                             </motorcycle-link>
                         </li>
                       
                         ${
                           JSON.parse(this.props['is-logged'])
                           ? `
-                              <li class="header__navigation-list-item">
-                                  <a href="#" class="sign-out-link">
-                                      <span class="link">Sign Out</span>
-                                  </a>
-                              </li>
+                                          
+                            <button class="header__sign-out">
+                              <a href="#" class="sign-out-link">
+                                <p class="header__sign-out-text">Sign Out</p>
+                              </a>
+                            </button>
                             `
                           : `
                             <li class="header__navigation-list-item">
                               <motorcycle-link to="${appRoutes.signIn}">
-                                Sign In
+                                <span class="link ${this.isActiveLink(appRoutes.signIn)}">Sign In</span>
                               </motorcycle-link>
                             </li>
 
                             <li class="header__navigation-list-item">
                               <motorcycle-link to="${appRoutes.signUp}">
-                                  Sign Up
+                                <span class="link ${this.isActiveLink(appRoutes.signUp)}">Sign Up</span>
                               </motorcycle-link>
                             </li>
                             `
@@ -102,10 +105,7 @@ export class Header extends core.Component{
                     </ul>
 
            
-                    <button class="header__log-in">
-                        <p class="header__log-in-text">Login</p>
-                    </button>
-
+                    
                     <li class="header__burger">
                       <button class="header__burger-button"
                         <svg class="header__burger-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,8 +122,8 @@ export class Header extends core.Component{
                             <img class="header__logo--mobile" src="/images/header-logo/two-wheelers-logo.svg" alt="two-wheelers-logo">
                         </motorcycle-link>
 
-                        <button class="header__log-in--mobile">
-                            <p class="header__log-in-text--mobile">Login</p>
+                        <button class="header__sign-out--mobile">
+                            <p class="header__sign-out-text--mobile">Sign Out</p>
                         </button>
 
                     </div>  
@@ -137,3 +137,7 @@ export class Header extends core.Component{
 }
 
 customElements.define('motorcycle-header', Header);
+
+// <button class="header__sign-out">
+//                         <p class="header__sign-out-text">Login</p>
+//                     </button>

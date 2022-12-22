@@ -1,10 +1,12 @@
-import { Component, FormManager } from "../../../core"
+import { FormManager } from "../../../core"
 import "../../molecules"
 import "../../atoms"
 import { appRoutes } from "../../../constants/appRoutes"
+import { appEvents } from "../../../constants/appEvents"
 import { Validator } from "../../../core"
-import { initialFieldsState } from "./InitialState";
+import { initialFieldsState } from "./InitialState"
 import  { authService } from "../../../services"
+import { Component, eventBus } from "../../../core"
 
 export class SignUpPage extends Component {
 
@@ -21,7 +23,7 @@ export class SignUpPage extends Component {
     this.form = new FormManager()
   }
 
-  toggleisLoading = () => {
+  toggleIsLoading = () => {
     this.setState((state) => {
         return {
             ...state,
@@ -31,11 +33,12 @@ export class SignUpPage extends Component {
   }
 
   registerUser = (data) => {
-    this.toggleisLoading()
+    this.toggleIsLoading()
     authService.signUp(data.email, data.password)
         .then((user) => {
             authService.user = user
-            this.dispatch('change-route', {target: appRoutes.home})
+            eventBus.emit(appEvents.changeRoute, { target: appRoutes.home });
+            eventBus.emit(appEvents.userAuthorized);
         })
         .catch((error) => {
             this.setState((state) => {
@@ -46,7 +49,7 @@ export class SignUpPage extends Component {
             })
         })
         .finally(() => {
-            this.toggleisLoading()
+            this.toggleIsLoading()
         })
 }
 
@@ -75,11 +78,11 @@ export class SignUpPage extends Component {
       })
     }
 
-  componentDidMount() {
-        this.addEventListener('submit', this.form.handleSubmit(this.registerUser))
-        this.addEventListener('click', this.validateForm)
-        this.addEventListener('validate-controls', this.validate)
-      }
+    componentDidMount() {
+      this.addEventListener("click", this.validateForm);
+      this.addEventListener("submit", this.form.handleSubmit(this.registerUser));
+      eventBus.on(appEvents.validateControls, this.validate);
+    }
 
   render () {
 

@@ -15,6 +15,11 @@
     justify-content: space-between;
 }
 
+.product__info-img{
+    width: 476px;
+    height:536px,
+}
+
 .product__info-img:hover{
     cursor: pointer;
 }
@@ -23,7 +28,7 @@
     width: 497px;
     height: 536px;
     margin-right: 205px;
-    background-image: url('../../../assets/images/product-card-image/yamaha-logo.png');
+    background-image: url('../../../assets/images/product-card-image/yamaha-logo.png') cover;
 }
 
 .product__info-description{
@@ -90,6 +95,7 @@
 
 .product__info-add-to-cart:hover{
     cursor: pointer;
+    text-decoration: none;
 }
 
 .product__info-add-to{
@@ -98,6 +104,17 @@
     font-weight: 700;
     font-size: 18px;
     color: var(--black);
+}
+
+.product__info-add-to-cart-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product__info-add-to-cart-description:hover{
+    text-decoration: none;
 }
 
 .specification__box{
@@ -114,6 +131,15 @@
     border-radius: 15px;
     border:none;
     background-color: var(--gold);
+    padding-top: 12px;
+}
+
+.return__button-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .specification__button:hover{
@@ -136,7 +162,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--black);
 }
 

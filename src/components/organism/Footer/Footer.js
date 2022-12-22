@@ -2,6 +2,7 @@ import { Component } from "../../../core";
 import './footer.scss'
 
 
+
 export class Footer extends Component {
     render() {
         return `
@@ -51,7 +52,7 @@ export class Footer extends Component {
                     <div class="footer__box3">
                         <ul class="footer__ul">
                             <li class="footer__li">
-                                <a class="footer__link" href>Test Ride</a>
+                                <a class="footer__link" href>Test Ride</motorcycle-link>
                             </li>
 
                             <li class="footer__li">
@@ -99,22 +100,30 @@ export class Footer extends Component {
             
                             <div class="footer__icons">
             
+                            <a href="https://www.facebook.com" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="19px" height="40px">
                                     <use xlink:href="./images/footer/footer-sprite.svg#facebook"></use>
                                 </svg>
-            
+                            <a>
+
+                            <a href="https://www.instagram.com" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="37px" height="37px">
                                     <use xlink:href="./images/footer/footer-sprite.svg#insta"></use>
                                 </svg>
-            
+                            </a>
+
+                            <a href="https://ru.linkedin.com/" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="37px" height="37px">
                                     <use xlink:href="./images/footer/footer-sprite.svg#in"></use>
                                 </svg>
-            
+                            </a>
+
+                            <a href="https://www.youtube.com" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="footer__icon" width="40px" height="40px">
                                     <use xlink:href="./images/footer/footer-sprite.svg#youtube"></use>
                                 </svg>
-            
+                            </a>
+
                             </div>
                     </div>
                 </div>

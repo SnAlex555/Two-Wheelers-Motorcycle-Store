@@ -1,6 +1,6 @@
 import { appEvents } from "../../constants/appEvents"
 import { Component } from "../Component"
-// import { eventBus } from "../EventBus/EventBus"
+import { eventBus } from "../EventBus";
 import './Link.scss'
 
 export class Link extends Component {
@@ -15,7 +15,7 @@ export class Link extends Component {
 
   onClick = (evt) => {
     evt.preventDefault();
-    this.dispatch('change-route', { target: this.props.to })
+    eventBus.emit(appEvents.changeRoute, { target: this.props.to });
   };
 
   componentDidMount() {
@@ -37,10 +37,7 @@ export class Link extends Component {
                     color: var(--light-blue);
                     transition: color 0.3s linear;
                 }
-                a:hover {
-                    color: var(--dark-primary);
-                    border-bottom: 2px solid;
-                }
+               
             </style>
                 <slot></slot>
             </a>

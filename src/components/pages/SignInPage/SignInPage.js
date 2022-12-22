@@ -2,9 +2,11 @@ import { Component, FormManager } from "../../../core"
 import "../../molecules"
 import "../../atoms"
 import { appRoutes } from "../../../constants/appRoutes"
+import { appEvents } from "../../../constants/appEvents"
 import { Validator } from "../../../core"
 import { initialFieldsState } from "./InitialState";
 import  { authService } from "../../../services"
+import { eventBus } from "../../../core"
 
 export class SignInPage extends Component {
   
@@ -21,7 +23,7 @@ export class SignInPage extends Component {
     this.form = new FormManager()
   }
 
-  toggleisLoading = () => {
+  toggleIsLoading = () => {
     this.setState((state) => {
         return {
             ...state,
@@ -31,13 +33,13 @@ export class SignInPage extends Component {
   }
 
   signIn = (data) => {
-    this.toggleisLoading()
+    this.toggleIsLoading()
     authService
         .signIn(data.email, data.password)
         .then((user) => {
-            authService.user = user
-            this.dispatch('change-route', {target: appRoutes.home});
-            this.dispatch('user-is-logged');
+            authService.user = user;
+          eventBus.emit(appEvents.changeRoute, { target: appRoutes.home });
+          eventBus.emit(appEvents.userAuthorized);
         })
         .catch((error) => {
             this.setState((state) => {
@@ -77,11 +79,11 @@ export class SignInPage extends Component {
         })
     }
 
-  componentDidMount() {
-        this.addEventListener('submit', this.form.handleSubmit(this.signIn))
-        this.addEventListener('click', this.validateForm)
-        this.addEventListener('validate-controls', this.validate)
-      }
+    componentDidMount() {
+      eventBus.on(appEvents.validateControls, this.validate);
+      this.addEventListener("click", this.validateForm);
+      this.addEventListener("submit", this.form.handleSubmit(this.signIn));
+    }
 
   render () {
 

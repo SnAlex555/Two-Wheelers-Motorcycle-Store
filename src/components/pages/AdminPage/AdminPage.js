@@ -1,8 +1,11 @@
 import { appRoutes } from '../../../constants/appRoutes'
+import { appEvents } from "../../../constants/appEvents";
 import { Component, FormManager } from '../../../core'
 import { databaseService } from '../../../services';
 import { authService } from '../../../services/Auth'
 import { storageService } from '../../../services/Storage';
+import { eventBus } from '../../../core/EventBus/EventBus'
+import './AdminPage.scss'
 
 export class AdminPage extends Component {
 
@@ -14,7 +17,7 @@ export class AdminPage extends Component {
     this.form = new FormManager();
     } 
 
-    toggleisLoading(){
+    toggleIsLoading(){
     this.setState((state) => {
         return {
           ...state,
@@ -24,8 +27,9 @@ export class AdminPage extends Component {
    }
 
   createMotorcycle = (data) => {
-    this.toggleisLoading();
-    storageService.uploadPoster(data.poster)
+    this.toggleIsLoading();
+    storageService
+    .uploadPoster(data.poster)
       .then((snapshot) => {
         storageService.getDownloadURL(snapshot.ref).then((url) => {
           databaseService.create('motorcycle', {
@@ -38,25 +42,20 @@ export class AdminPage extends Component {
             })
         })
         .finally(() => {
-        this.toggleisLoading()
+        this.toggleIsLoading()
         })
-        }
+      }
 
-  componentDidMount() {
-    this.form.init(this.querySelector('.send-data'), {})
-    this.addEventListener('submit', this.form.handleSubmit(this.createMotorcycle))
-    if (!authService.user) {
-      this.dispatch('change-route', 
-      { target: appRoutes[this.props.path ?? 'signUp'] 
-    });
-  }
-  }
+        componentDidMount() {
+          this.form.init(this.querySelector(".send-data"), {});
+          this.addEventListener("submit", this.form.handleSubmit(this.createMotorcycle));
+        }
 
   render() {
     return `
       <motorcycle-preloader is-loading="${this.state.isLoading}">
         <div class="container mt-5">
-          <h1>AdminPage</h1>
+          <h1 class="form__title">Admin</h1>
           <div class="row">
             <div class="col-12">
               <form class="send-data">

@@ -1,3 +1,6 @@
+import { appEvents } from "../../constants/appEvents";
+import { eventBus } from "../EventBus";
+
 export class FormManager {
     constructor() {
         this.ref = null;
@@ -17,10 +20,6 @@ export class FormManager {
         };
     };
 
-    dispatch(target, data) {
-        target.dispatchEvent(new CustomEvent('validate-controls', { bubbles: true, detail: data }));
-    }
-
     validate = (key) => {
         return (evt) => {
             const value = evt.target.value;
@@ -33,16 +32,16 @@ export class FormManager {
                     return acc;
                 }, {});
 
-            this.dispatch(evt.target, {
-                [key]: {
+            eventBus.emit(appEvents.validateControls, {
+                 [key]: {
                     value,
                     errors: results,
                     isTouched: true,
                     isValid: Object.values(results).length === 0,
                 },
-            });
+                });
+            };
         };
-    };
 
     init(ref, scheme) {
         this.ref = ref;

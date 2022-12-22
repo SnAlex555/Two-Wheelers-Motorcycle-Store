@@ -1,4 +1,5 @@
 import { Component } from "../../../core"
+import { appRoutes } from "../../../constants/appRoutes";
 import './MainTopCommercial.scss'
 
 
@@ -16,7 +17,9 @@ export class MainTopCommercial extends Component{
                                 price you can get and great quality motorcycle.
                             </p>
 
-                            <p class="main__top-commercial-title-description"> Let's find one!</p>
+                            <motorcycle-link to="${appRoutes.productShowroomFilter}">
+                                <p class="main__top-commercial-title-description"> Let's find one!</p>
+                            </motorcycle-link>
                         </div>
 
                         <div class="main__top-commercial-box2">
