@@ -88,14 +88,14 @@ export class ProductCardPage extends core.Component {
                             <div class="specification__box">
         
                                 <button class="specification__button">
-                                    <motorcycle-link to="${appRoutes.errorPage}
+                                    <motorcycle-link to="${appRoutes.errorPage}">
                                         <span class="specification__description">Specifications</span>
                                     </motorcycle-link>
                                 </button>
         
                                 <button class="return__button">
                                     <motorcycle-link to="${appRoutes.productShowroomFilter}">
-                                    <span class="return__button-description">Return to Showroom</span>
+                                        <span class="return__button-description">Return to Showroom</span>
                                     </motorcycle-link>
                                 </button>
         

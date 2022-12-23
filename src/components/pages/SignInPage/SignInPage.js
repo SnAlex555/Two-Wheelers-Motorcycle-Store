@@ -13,7 +13,7 @@ export class SignInPage extends Component {
   constructor() {
     super();
     this.state = {
-      error: '',
+      error: "",
       isLoading:false,
       fields: {
         ...initialFieldsState
@@ -92,6 +92,7 @@ export class SignInPage extends Component {
     return `
     <motorcycle-preloader is-loading="${this.state.isLoading}">
       <form class= "mt-5 registration-form">
+      <h1 class="form__title">Sign In</h1>
       <div class="invalid-feedback text-center mb-3 d-block">${this.state.error}</div>
         <motorcycle-input
           type="email"

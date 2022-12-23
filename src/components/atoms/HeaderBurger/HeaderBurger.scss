@@ -1,15 +1,16 @@
-.header__burger{
-    margin: 48px 0 0 50px;
-    display: none;
-    cursor: pointer;
-}
+.header__burger-button{
+        margin: 48px 0 0 50px;
+        cursor: pointer;
+        display: none;
+        padding: 10px;
+        background: transparent;
+        border: 1px solid transparent;
+        margin: 7px 0;
+    }
 
 @media screen and (max-width:912px ){
-.header__burger{
+.header__burger-button{
     display: block;
-    padding: 10px;
-    background: transparent;
-    border: 1px solid transparent;
-    margin: 7px 0;
     }
 }
+

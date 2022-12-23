@@ -14,7 +14,7 @@ export class App extends core.Component {
       this.state = {
          isLoading: false,
          isLogged: false,
-         error: '',
+         error: "",
       };
    }
 
@@ -61,7 +61,7 @@ export class App extends core.Component {
          then.setState((state) => {
             return {
                ...state,
-               isLogged: error.message,
+               isLogged: false,
             }
          });
       })
@@ -78,7 +78,7 @@ export class App extends core.Component {
       });
    }
 
-   setIsLogged = () => {
+   setIsAuthorized = () => {
       this.setState((state) => {
          return {
             ...state,
@@ -114,7 +114,6 @@ export class App extends core.Component {
                                  </private-route>
                                  <motorcycle-route path="${appRoutes.signIn}" component="sign-in-page" title="Sign In"></motorcycle-route>
                                  <motorcycle-route path="${appRoutes.signUp}" component="sign-up-page" title="Sign Up"></motorcycle-route>
-                                 <motorcycle-route path="${appRoutes.cart}" component="cart-page" title="Cart"></motorcycle-route>
                                  <motorcycle-route path="${appRoutes.errorPage}" component="error-page" title="Not Found"></motorcycle-route>
                                  <motorcycle-outlet></motorcycle-outlet>
                               </main>

@@ -158,11 +158,11 @@
     background-color: var(--white);
 }
 
-.specification__description{
-    font-family: 'Inter';
+.spefont-family {
+    font-family:'Inter';
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
     color: var(--black);
 }
 
@@ -216,6 +216,14 @@
     margin-top: 15px;
     margin-right: 130px;
     gap: 110px;
+}
+
+.specification__description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--black);
 }
 
 .item_description{
@@ -377,7 +385,11 @@
 }
 
 @media screen and (max-width:812px){
-   
+
+    .product__info{
+    height:2005px;
+    }
+
     .product__info-box1 {
         margin-left: 100px;
         margin-top: 40px;
@@ -422,10 +434,6 @@
         flex-direction: column;
     }
     
-    .product__info {
-        height: 1900px;
-    }
-
     .check__other-box{
         display: block;
         margin-left: 100px;

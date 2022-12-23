@@ -34,6 +34,8 @@ export class Link extends Component {
                 a{
                     text-decoration: none;
                     font-family: "Inter";
+                    font-size: 20px;
+                    font-size: 600;
                     color: var(--light-blue);
                     transition: color 0.3s linear;
                 }

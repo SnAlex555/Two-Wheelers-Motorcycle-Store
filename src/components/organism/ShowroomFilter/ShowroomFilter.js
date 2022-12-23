@@ -17,36 +17,36 @@ export class ShowroomFilter extends Component {
 
                                 <div class="search__box1">
                                     <select class="search-box__input1">
-                                        <option class="search-box__input-option" value="1">All Conditions</option>
-                                        <option class="search-box__input-option" value="2">New</option>
-                                        <option class="search-box__input-option" value="3">Used</option>
+                                        <option class="search-box__input-option" value="All Conditions">All Conditions</option>
+                                        <option class="search-box__input-option" value="New">New</option>
+                                        <option class="search-box__input-option" value="Used">Used</option>
                                     </select>
                                     <select class="search-box__input2">
-                                        <option class="search-box__input-option" value="1">All Brands</option>
-                                        <option class="search-box__input-option" value="2">Aprilia</option>
-                                        <option class="search-box__input-option" value="3">BMW</option>
-                                        <option class="search-box__input-option" value="4">Ducati</option>
-                                        <option class="search-box__input-option" value="5">Harley Davidson</option>
-                                        <option class="search-box__input-option" value="6">Honda</option>
-                                        <option class="search-box__input-option" value="7">Husqvarna</option>
-                                        <option class="search-box__input-option" value="8">Kawasaki</option>
-                                        <option class="search-box__input-option" value="9">KTM</option>
-                                        <option class="search-box__input-option" value="10">Suzuki</option>
-                                        <option class="search-box__input-option" value="11">Triumph</option>
-                                        <option class="search-box__input-option" value="12">Yamaha</option>
+                                        <option class="search-box__input-option" value="All Brands">All Brands</option>
+                                        <option class="search-box__input-option" value="Aprilia">Aprilia</option>
+                                        <option class="search-box__input-option" value="BMW">BMW</option>
+                                        <option class="search-box__input-option" value="Ducati">Ducati</option>
+                                        <option class="search-box__input-option" value="Harley Davidson">Harley Davidson</option>
+                                        <option class="search-box__input-option" value="Honda">Honda</option>
+                                        <option class="search-box__input-option" value="Husqvarna">Husqvarna</option>
+                                        <option class="search-box__input-option" value="Kawasaki">Kawasaki</option>
+                                        <option class="search-box__input-option" value="KTM">KTM</option>
+                                        <option class="search-box__input-option" value="Suzuki">Suzuki</option>
+                                        <option class="search-box__input-option" value="Triumph">Triumph</option>
+                                        <option class="search-box__input-option" value="Yamaha">Yamaha</option>
                                     </select>
                                 </div>
 
                                 <div class="search__box2">
                                     <select class="search-box__input3">
-                                        <option class="search-box__input-option" value="1">All Colors</option>
-                                        <option class="search-box__input-option" value="2">Red</option>
-                                        <option class="search-box__input-option" value="3">Blue</option>
-                                        <option class="search-box__input-option" value="4">Green</option>
-                                        <option class="search-box__input-option" value="5">Orange</option>
-                                        <option class="search-box__input-option" value="6">Black</option>
-                                        <option class="search-box__input-option" value="7">Silver</option>
-                                        <option class="search-box__input-option" value="8">White</option>
+                                        <option class="search-box__input-option" value="All Colors">All Colors</option>
+                                        <option class="search-box__input-option" value="Red">Red</option>
+                                        <option class="search-box__input-option" value="Blue">Blue</option>
+                                        <option class="search-box__input-option" value="Green">Green</option>
+                                        <option class="search-box__input-option" value="Orange">Orange</option>
+                                        <option class="search-box__input-option" value="Black">Black</option>
+                                        <option class="search-box__input-option" value="Silver">Silver</option>
+                                        <option class="search-box__input-option" value="White">White</option>
                                     </select>
                                     <input class="search__box-text-input" type="text" placeholder="Select model manually" >
                 

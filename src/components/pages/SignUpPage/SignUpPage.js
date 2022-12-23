@@ -34,7 +34,8 @@ export class SignUpPage extends Component {
 
   registerUser = (data) => {
     this.toggleIsLoading()
-    authService.signUp(data.email, data.password)
+    authService
+        .signUp(data.email, data.password)
         .then((user) => {
             authService.user = user
             eventBus.emit(appEvents.changeRoute, { target: appRoutes.home });
@@ -91,6 +92,7 @@ export class SignUpPage extends Component {
     return `
     <motorcycle-preloader is-loading="${this.state.isLoading}">
       <form class= "mt-5 registration-form">
+      <h1 class="form__title">Sign Up</h1>
       <div class="invalid-feedback text-center mb-3 d-block">${this.state.error}</div>
         <motorcycle-input
           type="email"

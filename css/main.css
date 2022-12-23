@@ -3,7 +3,7 @@
 @import url('/css/reset.css');
 @import url('./common.css');
 @import url('../libs/normalise.css');
-@import url('/css/components/header/header.css');
+/* @import url('/css/components/header/header.css'); */
 @import url('/css/components/main-top-commercial/main-top-commercial.css');
 @import url('./components/summer-ride-commercial/summer-ride-commercial.css');
 @import url('./components/why-us/why-us.css');
@@ -15,3 +15,4 @@
 @import url('./components/error-page/error-page.css');
 @import url('./components/sign-in/sign-in.css');
 @import url('./components/sign-up/sign-up.css');
+@import url('./components/main-top-commercial/header2.css');

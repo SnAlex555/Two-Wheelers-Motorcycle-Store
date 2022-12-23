@@ -18,10 +18,10 @@ export class PrivateRoute extends Component {
   }
 
   render() {
-    return `<it-route 
+    return `<motorcycle-route 
       path="${this.props.path}" 
       component="${this.props.component}" 
-      title="${this.props.title}"></it-route>`;
+      title="${this.props.title}"></motorcycle-route>`;
   }
 }
 
